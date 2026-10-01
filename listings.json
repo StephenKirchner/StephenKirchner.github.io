@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/articles.html",
+    "items": []
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/2026-10-01-welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/monographs.html",
+    "items": []
+  }
+]

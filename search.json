@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "posts/2026-10-01-welcome/index.html",
+    "href": "posts/2026-10-01-welcome/index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to my new website. Posts will appear here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About me",
+    "section": "",
+    "text": "I am an economist … (replace with your bio, research interests and a link to your CV)."
+  },
+  {
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Articles",
+    "section": "",
+    "text": "Date\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n2024\n\n\nExample article title\n\n\nJournal name, vol(issue)\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome\n\n\n\nnews\n\n\n\nFirst post on the new site.\n\n\n\n\n\nOct 1, 2026\n\n\nStephen Kirchner\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "monographs.html",
+    "href": "monographs.html",
+    "title": "Monographs",
+    "section": "",
+    "text": "Date\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n2023\n\n\nExample monograph title\n\n\nPublisher\n\n\n\n\n\n\nNo matching items"
+  }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Stephen Kirchner</title>
+<link>https://stephenkirchner.github.io/blog.html</link>
+<atom:link href="https://stephenkirchner.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Economist: articles, monographs and blog.</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Wed, 30 Sep 2026 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome</title>
+  <dc:creator>Stephen Kirchner</dc:creator>
+  <link>https://stephenkirchner.github.io/posts/2026-10-01-welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Welcome to my new website. Posts will appear here.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://stephenkirchner.github.io/posts/2026-10-01-welcome/</guid>
+  <pubDate>Wed, 30 Sep 2026 14:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
