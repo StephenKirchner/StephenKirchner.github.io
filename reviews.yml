@@ -18,12 +18,14 @@
 
 - title: "<em>The Modest Member: The Life and Times of Bert Kelly</em>"
   type: review
+  outlet: "Policy"
   date: 2013-05-09
   when: "May 2013"
   url: "files/reviews/kelly.pdf"
 
 - title: "<em>The Kingdom and the Quarry</em> by David Uren"
   type: review
+  outlet: "Policy"
   date: 2012-11-21
   when: "November 2012"
   url: "files/reviews/urenreview.pdf"
@@ -88,14 +90,6 @@
   date: 2005-09-12
   url: "reviews/rise-and-fall-of-monetary-targeting.html"
 
-- title: "‘The Mandarins of Martin Place’: <em>Australia’s Money Mandarins: The Reserve Bank and the Politics of Money</em> by Stephen Bell"
-  type: review
-  outlet: "Policy"
-  details: "20(3)"
-  date: 2004-09-01
-  when: "Spring 2004"
-  url: "files/reviews/moneymandarins.pdf"
-
 - title: "<em>The Ordinary Business of Life: A History of Economics</em> by Roger Backhouse"
   type: review
   outlet: "Policy"
@@ -112,12 +106,14 @@
 
 - title: "<em>Greenspan: The Man Behind Money</em> by Justin Martin and <em>Maestro: Greenspan’s Fed and the American Boom</em> by Bob Woodward"
   type: review
+  outlet: "Policy"
   date: 2001-05-24
   when: "2001"
   url: "files/reviews/woodwardmartinongreenspan.pdf"
 
 - title: "<em>Irrational Exuberance</em> by Robert Shiller"
   type: review
+  outlet: "Policy"
   date: 2000-11-22
   when: "2000"
   url: "files/reviews/shillerirratexub.pdf"
