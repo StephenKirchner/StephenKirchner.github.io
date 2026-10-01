@@ -19,16 +19,16 @@ website:
     contents:
       - text: "Newsletter"
         icon: envelope
-        href: https://your-newsletter-url
+        href: https://stephenkirchner.substack.com
       - text: "Twitter"
         icon: twitter-x
-        href: https://x.com/yourhandle
+        href: https://x.com/insteconomics
       - text: "Bluesky"
         icon: butterfly
-        href: https://bsky.app/profile/yourhandle.bsky.social
+        href: https://bsky.app/profile/insteconomics.bsky.social
       - text: "LinkedIn"
         icon: linkedin
-        href: https://www.linkedin.com/in/yourprofile
+        href: https://www.linkedin.com/in/stephen-kirchner-6533994a
       - text: "RSS"
         icon: rss
         href: blog.xml
