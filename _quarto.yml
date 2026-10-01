@@ -1,0 +1,45 @@
+project:
+  type: website
+
+website:
+  title: "Stephen Kirchner"                     # navbar brand -> index.qmd (About me)
+  site-url: "https://stephenkirchner.github.io" # required for the RSS feed
+  description: "Economist: articles, monographs and blog."
+  navbar:
+    left:
+      - text: "Articles"
+        href: articles.qmd
+      - text: "Monographs"
+        href: monographs.qmd
+      - text: "Blog"
+        href: blog.qmd
+  sidebar:
+    style: floating
+    # logo: images/profile.jpg                  # uncomment once you add your photo
+    contents:
+      - text: "Newsletter"
+        icon: envelope
+        href: https://your-newsletter-url
+      - text: "Twitter"
+        icon: twitter-x
+        href: https://x.com/yourhandle
+      - text: "Bluesky"
+        icon: butterfly
+        href: https://bsky.app/profile/yourhandle.bsky.social
+      - text: "LinkedIn"
+        icon: linkedin
+        href: https://www.linkedin.com/in/yourprofile
+      - text: "RSS"
+        icon: rss
+        href: blog.xml
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly      # two themes = dark-mode toggle in the navbar
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto

@@ -1,0 +1,8 @@
+---
+title: "Welcome"
+date: 2026-10-01
+categories: [news]
+description: "First post on the new site."
+---
+
+Welcome to my new website. Posts will appear here.

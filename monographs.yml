@@ -1,0 +1,5 @@
+# One entry per monograph. 'path' can be a URL or a local file, e.g. files/report.pdf
+- title: "Example monograph title"
+  date: 2023-08-01
+  description: "Publisher"
+  path: https://example.com

@@ -1,0 +1,11 @@
+---
+title: "Articles"
+listing:
+  contents: articles.yml
+  type: table
+  sort: "date desc"
+  fields: [date, title, description]
+  date-format: "YYYY"
+  sort-ui: false
+  filter-ui: true
+---

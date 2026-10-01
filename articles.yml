@@ -1,0 +1,5 @@
+# One entry per article. 'path' can be a DOI/URL or a local file, e.g. files/paper.pdf
+- title: "Example article title"
+  date: 2024-05-01
+  description: "Journal name, vol(issue)"
+  path: https://doi.org/10.0000/example
