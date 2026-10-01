@@ -1,0 +1,123 @@
+# Book reviews listed on reviews.qmd, sorted automatically by date (newest first).
+# To add one, copy an entry. Fields:
+#   title    the book(s) reviewed; use <em>...</em> for book titles
+#   type     review
+#   date     YYYY-MM-DD (required)
+#   outlet   where the review was published (optional), shown in italics
+#   details  e.g. volume and issue
+#   when     replaces the displayed date, e.g. "Autumn 2017"
+#   url      link to the review (a PDF in files/reviews/, or a page in reviews/)
+
+- title: "<em>The Man Who Knew: The Life and Times of Alan Greenspan</em> by Sebastian Mallaby"
+  type: review
+  outlet: "Policy"
+  details: "33(1)"
+  date: 2017-03-01
+  when: "Autumn 2017"
+  url: "files/reviews/33-1-kirchner-stephen.pdf"
+
+- title: "<em>The Modest Member: The Life and Times of Bert Kelly</em>"
+  type: review
+  date: 2013-05-09
+  when: "May 2013"
+  url: "files/reviews/kelly.pdf"
+
+- title: "<em>The Kingdom and the Quarry</em> by David Uren"
+  type: review
+  date: 2012-11-21
+  when: "November 2012"
+  url: "files/reviews/urenreview.pdf"
+
+- title: "<em>Guaranteed to Fail: Fannie Mae, Freddie Mac and the Debacle of Mortgage Finance</em> by Viral V. Acharya, Matthew Richardson, Stijn Van Nieuwerburgh and Lawrence J. White"
+  type: review
+  outlet: "The Conversation"
+  date: 2011-05-17
+  url: "https://theconversation.com/freddie-mac-and-fannie-mae-guaranteed-to-fail-1307"
+
+- title: "<em>The Myth of the Rational Market</em> by Justin Fox"
+  type: review
+  date: 2010-04-21
+  url: "reviews/myth-of-the-rational-market.html"
+
+- title: "<em>Ayn Rand and the World She Made</em> by Anne Heller and <em>Goddess of the Market: Ayn Rand and the American Right</em> by Jennifer Burns"
+  type: review
+  outlet: "Policy"
+  details: "26(1)"
+  date: 2010-03-01
+  when: "Autumn 2010"
+  url: "files/reviews/randreview.pdf"
+
+- title: "‘Authoritarian Economics’: <em>The Subprime Solution</em> by Robert Shiller and <em>Animal Spirits: How Human Psychology Drives the Economy and Why It Matters for Global Capitalism</em> by George Akerlof and Robert Shiller"
+  type: review
+  outlet: "Policy"
+  details: "25(3)"
+  date: 2009-09-01
+  when: "Spring 2009"
+  url: "files/reviews/ackerlofshillerreview.pdf"
+
+- title: "<em>The Age of Turbulence</em> by Alan Greenspan"
+  type: review
+  date: 2008-08-29
+  url: "reviews/age-of-turbulence.html"
+
+- title: "‘Two Views on the Economic Expansion’: <em>Quiet Boom</em> and <em>The Search for Stability</em>"
+  type: review
+  outlet: "Policy"
+  details: "23(2)"
+  date: 2007-06-01
+  when: "Winter 2007"
+  url: "files/reviews/TwoViewsEconExpansionPolicyWinter2007.pdf"
+
+- title: "<em>Flying on One Engine: The Bloomberg Book of Master Market Economists</em>, edited by Thomas Keene"
+  type: review
+  date: 2006-01-28
+  url: "reviews/flying-on-one-engine.html"
+
+- title: "<em>Money and Asset Prices in Boom and Bust</em> by Tim Congdon"
+  type: review
+  date: 2005-12-13
+  url: "reviews/money-and-asset-prices.html"
+
+- title: "<em>Bubble Man: Alan Greenspan &amp; the Missing 7 Trillion Dollars</em> by Peter Hartcher"
+  type: review
+  date: 2005-10-17
+  url: "reviews/bubble-man.html"
+
+- title: "<em>The Rise and Fall of Monetary Targeting in Australia</em> by Simon Guttmann"
+  type: review
+  date: 2005-09-12
+  url: "reviews/rise-and-fall-of-monetary-targeting.html"
+
+- title: "‘The Mandarins of Martin Place’: <em>Australia’s Money Mandarins: The Reserve Bank and the Politics of Money</em> by Stephen Bell"
+  type: review
+  outlet: "Policy"
+  details: "20(3)"
+  date: 2004-09-01
+  when: "Spring 2004"
+  url: "files/reviews/moneymandarins.pdf"
+
+- title: "<em>The Ordinary Business of Life: A History of Economics</em> by Roger Backhouse"
+  type: review
+  outlet: "Policy"
+  date: 2003-03-01
+  when: "Autumn 2003"
+  url: "https://web.archive.org/web/20140213214616/http://www.cis.org.au:80/publications/policy-magazine/article/2098-book-review-the-ordinary-business-of-life"
+
+- title: "<em>Guiding Global Order</em>, edited by John Kirton, Joseph Daniels and Andreas Freytag"
+  type: review
+  outlet: "Policy"
+  date: 2001-12-01
+  when: "Summer 2001–02"
+  url: "https://web.archive.org/web/20030507091908/http://www.cis.org.au:80/policy/summer01-02/PolicySummer01_9b.htm"
+
+- title: "<em>Greenspan: The Man Behind Money</em> by Justin Martin and <em>Maestro: Greenspan’s Fed and the American Boom</em> by Bob Woodward"
+  type: review
+  date: 2001-05-24
+  when: "2001"
+  url: "files/reviews/woodwardmartinongreenspan.pdf"
+
+- title: "<em>Irrational Exuberance</em> by Robert Shiller"
+  type: review
+  date: 2000-11-22
+  when: "2000"
+  url: "files/reviews/shillerirratexub.pdf"

@@ -1,0 +1,17 @@
+---
+title: "Reviews"
+toc: false
+listing:
+  - id: reviews
+    contents: reviews.yml
+    template: _publications.ejs
+    template-params:
+      group-by-year: true
+    sort: "date desc"
+    date-format: "D MMMM YYYY"
+---
+
+Book reviews and review essays.
+
+::: {#reviews}
+:::

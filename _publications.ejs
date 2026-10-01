@@ -1,9 +1,10 @@
 <%
-// Custom listing template for articles.qmd and monographs.qmd
-// (data in articles.yml and monographs.yml).
+// Custom listing template for articles.qmd, monographs.qmd and reviews.qmd
+// (data in articles.yml, monographs.yml and reviews.yml).
 // With template-params: {group-by-year: true}, entries get year headings
 // and a row of year links at the top.
-// Entry types: monograph (italic title, plain publisher), chapter
+// Entry types: review (title holds the book(s), may contain HTML),
+// monograph (italic title, plain publisher), chapter
 // ('Title', in editors, Book), anything else ('Title', italic outlet).
 // Notes: Quarto treats this output as Markdown, so each entry is built as a
 // single line of HTML. Quarto templates use lodash syntax: the "=" tag outputs raw
@@ -16,6 +17,9 @@ const entry = function (item) {
   let s;
   if (item.type === 'monograph') {
     s = link(item.url, '<em>' + item.title + '</em>') + ', ' + item.outlet;
+  } else if (item.type === 'review') {
+    s = 'Review of ' + link(item.url, item.title);
+    if (item.outlet) s += ', <em>' + item.outlet + '</em>';
   } else if (item.type === 'chapter') {
     s = link(item.url, '‘' + item.title + '’') + ', in ';
     if (item.editors) s += item.editors + ', ';

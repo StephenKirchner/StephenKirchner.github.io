@@ -13,6 +13,8 @@ website:
         href: articles.qmd
       - text: "Monographs"
         href: monographs.qmd
+      - text: "Reviews"
+        href: reviews.qmd
       - text: "Blog"
         href: blog.qmd
   sidebar:
