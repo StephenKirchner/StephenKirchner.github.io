@@ -1,5 +1,279 @@
-# One entry per monograph. 'path' can be a URL or a local file, e.g. files/report.pdf
-- title: "Example monograph title"
-  date: 2023-08-01
-  description: "Publisher"
-  path: https://example.com
+# Monographs listed on monographs.qmd, sorted automatically by date (newest first).
+# To add one, copy an entry. Fields:
+#   title, outlet (the publisher), date (YYYY-MM-DD) and type are required.
+#   type     monograph (title shown in italics) or chapter (title in quotes,
+#            followed by "in <book>")
+#   details  series and number, e.g. "Policy Monograph 132"
+#   when     replaces the displayed date, e.g. "November 2012"
+#   url      link to the publication (or a PDF in files/monographs/)
+#   note     text shown at the end; may contain links
+#   book, editors, book-url   for chapters: the book, its editors and a link
+
+- title: "The Canadian-Australian Productivity Gap: Comparative Institutions and Policy Settings"
+  type: monograph
+  outlet: "Fraser Institute"
+  date: 2022-09-29
+  url: "https://www.fraserinstitute.org/studies/canadian-australian-productivity-gap-comparative-institutions-and-policy-settings"
+
+- title: "The Canadian-Australian Business Sector Productivity Gap: A Sectoral Analysis"
+  type: monograph
+  outlet: "Fraser Institute"
+  date: 2022-07-12
+  url: "https://www.fraserinstitute.org/studies/canadian-australian-business-sector-productivity-gap-a-sectoral-analysis"
+  note: "With Milagros Palacios."
+
+- title: "Understanding the Prosperity Gap between Australia and Canada"
+  type: monograph
+  outlet: "Fraser Institute"
+  date: 2022-03-15
+  url: "https://www.fraserinstitute.org/studies/understanding-the-prosperity-gap-between-australia-and-canada"
+
+- title: "From “China Shock” to deglobalisation shock: China’s WTO accession and US economic engagement 20 years on"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2022-01-24
+  url: "https://www.ussc.edu.au/from-china-shock-to-deglobalisation-shock-chinas-wto-accession-and-us-economic-engagement-20-years-on"
+
+- title: "A Geoeconomic Alliance: The Potential and Limits of Economic Statecraft"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2021-09-29
+  url: "https://www.ussc.edu.au/a-geoeconomic-alliance-the-potential-and-limits-of-economic-statecraft"
+
+- title: "Australia-US bilateral investment in 2020: Taxing times"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2021-07-05
+  url: "https://www.ussc.edu.au/australia-us-bilateral-investment-in-2020-taxing-times"
+
+- title: "A Foreign Investment Uncertainty Index for Australia and the United States"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2021-04-16
+  url: "https://www.ussc.edu.au/a-foreign-investment-uncertainty-index-for-australia-and-the-united-states"
+
+- title: "Reforming Australian Monetary Policy: How Nominal Income Targeting Can Help Get the Reserve Bank Back on Track"
+  type: monograph
+  outlet: "Mercatus Center, George Mason University"
+  date: 2021-01-27
+  url: "https://www.mercatus.org/publications/monetary-policy/reforming-australian-monetary-policy-how-nominal-income-targeting-can"
+
+- title: "Avoiding US-style demographic stagnation: The role of immigration and population growth in Australia’s post-pandemic recovery"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2020-11-01
+  when: "November 2020"
+  url: "https://www.ussc.edu.au/avoiding-us-style-demographic-stagnation-the-role-of-immigration-and-population-growth-in-australias-post-pandemic-recovery"
+
+- title: "Globalisation and labour productivity in the OECD: What are the implications for post-pandemic recovery and resilience?"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2020-06-04
+  url: "https://www.ussc.edu.au/globalisation-and-labour-productivity-in-the-oecd-what-are-the-implications-for-post-pandemic-recovery-and-resilience"
+
+- title: "Failure to converge? The Australia-US productivity gap in long-run perspective"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2020-04-16
+  url: "https://www.ussc.edu.au/failure-to-converge-the-australia-us-productivity-gap-in-long-run-perspective"
+
+- title: "The ‘reserve currency’ myth: The US dollar’s current and future role in the world economy"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2019-11-11
+  url: "https://www.ussc.edu.au/the-reserve-currency-myth-the-us-dollars-current-and-future-role-in-the-world-economy"
+
+- title: "Lessons from quantitative easing in the United States: A guide for Australian policymakers"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2019-06-18
+  url: "https://www.ussc.edu.au/lessons-from-quantitative-easing-in-the-united-states-a-guide-for-australian-policymakers"
+
+- title: "Unbroken: Productivity and Worker Compensation in Australia and the United States"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2019-03-20
+  url: "https://www.ussc.edu.au/productivity-and-worker-compensation-in-australia-and-the-united-states"
+
+- title: "An open door: How globalised are the Australian and US economies?"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2018-11-14
+  url: "https://www.ussc.edu.au/how-globalised-are-the-australian-and-us-economies"
+
+- title: "State of confusion: How policy uncertainty harms international trade and investment"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2018-08-01
+  when: "August 2018"
+  url: "https://www.ussc.edu.au/how-policy-uncertainty-harms-international-trade-and-investment"
+
+- title: "Deal-breakers? Regulating foreign direct investment for national security in Australia and the United States"
+  type: monograph
+  outlet: "United States Studies Centre, University of Sydney"
+  date: 2018-07-01
+  when: "July 2018"
+  url: "https://www.ussc.edu.au/regulating-foreign-direct-investment-for-national-security-in-australia-and-the-united-states"
+
+- title: "On Fiscal Rules and Avoiding Public Debt Crises"
+  type: chapter
+  editors: "Jan Libich (ed.)"
+  book: "Real-World Economic Policy: Insights from Leading Australian Economists"
+  book-url: "https://au.cengage.com/c/isbn/9780170364386"
+  outlet: "Cengage Learning Australia"
+  date: 2015-01-01
+  when: "2015"
+
+- title: "Taxing Consumption, Not Saving: New Zealand’s Rejection of a Comprehensive Capital Gains Tax"
+  type: chapter
+  editors: "Charles Lammam and Jason Clemens (eds)"
+  book: "Capital Gains Tax Reform in Canada: Lessons from Abroad"
+  book-url: "https://www.fraserinstitute.org/sites/default/files/capital-gains-tax-reform-in-Canada.pdf"
+  outlet: "Fraser Institute"
+  date: 2014-11-01
+  when: "November 2014"
+
+- title: "Eight Housing Affordability Myths"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Issue Analysis 146"
+  date: 2014-07-01
+  when: "July 2014"
+  url: "files/monographs/ia146_-_Eight_Housing_Affordability_Myths.pdf"
+
+- title: "Regulating Foreign Direct Investment in Australia: Discussion Paper"
+  type: monograph
+  outlet: "Financial Services Institute of Australasia (FINSIA)"
+  date: 2014-02-01
+  when: "February 2014"
+  url: "https://web.archive.org/web/20160405035535/http://www.finsia.com/docs/default-source/industry-reports-foreign-direct-investment/regulating-foreign-direct-investment-in-australia.pdf?sfvrsn=4"
+
+- title: "Strengthening Australia’s Fiscal Institutions"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "T30.06"
+  date: 2013-12-01
+  when: "December 2013"
+  url: "files/monographs/t30.06_-_Strengthening_Australias_Fiscal_Institutions.pdf"
+
+- title: "Policy Reforms in Australia and What they Mean for Canada"
+  type: monograph
+  outlet: "Fraser Institute"
+  date: 2013-12-02
+  when: "December 2013"
+  url: "https://www.fraserinstitute.org/studies/policy-reforms-in-australia-and-what-they-mean-for-canada"
+
+- title: "Lessons from the Australian Experience"
+  type: chapter
+  editors: "Jason Clemens and Niels Veldhuis (eds)"
+  book: "Federalism and Fiscal Transfers: Essays on Australia, Germany, Switzerland, and the United States"
+  book-url: "https://www.fraserinstitute.org/content/federalism-and-fiscal-transfers-essays-australia-germany-switzerland-and-united-states"
+  outlet: "Fraser Institute"
+  date: 2013-10-01
+  when: "October 2013"
+
+- title: "Time to Dump Australia’s Anti-Dumping System"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Issue Analysis 141"
+  date: 2013-06-01
+  when: "June 2013"
+  url: "files/monographs/ia141_-_Time_to_Dump_Australias_Anti-Dumping_System.pdf"
+
+- title: "Compulsory Super at 20: ‘Libertarian Paternalism’ without the Libertarianism"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 132"
+  date: 2012-11-01
+  when: "November 2012"
+  url: "files/monographs/pm132.pdf"
+
+- title: "Future Funds or Future Eaters?"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 126"
+  date: 2012-02-01
+  when: "February 2012"
+  url: "files/monographs/pm126_-_Future_Fund_or_Future_Eaters.pdf"
+
+- title: "Hands, Mouths and Minds: Three Perspectives on Population Growth and Living Standards"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 123"
+  date: 2011-09-01
+  when: "September 2011"
+  url: "files/monographs/pm123.pdf"
+
+- title: "Why Does Government Grow?"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 117"
+  date: 2011-04-01
+  when: "April 2011"
+  url: "files/monographs/pm117_-_Why_Does_Government_Grow.pdf"
+
+- title: "Shooting the Messenger: The Ban on Short Selling"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Forum 19"
+  date: 2010-01-01
+  when: "2010"
+  url: "files/monographs/pf19_-_Shooting_the_Messenger_The_Ban_on_Short_Selling.pdf"
+  note: "With Robert Bianchi and John Green."
+
+- title: "Reforming Capital Gains Tax: The Myths and Realities Behind Australia’s Most Misunderstood Tax"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 103"
+  date: 2009-11-01
+  when: "November 2009"
+  url: "files/monographs/pm103.pdf"
+
+- title: "Fiscal Rules for Limited Government"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 98"
+  date: 2009-07-01
+  when: "July 2009"
+  url: "files/monographs/pm98.pdf"
+
+- title: "Fiscal Fallacies: The Failure of Activist Fiscal Policy"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Forum 18"
+  date: 2009-04-01
+  when: "April 2009"
+  url: "files/monographs/PF18.pdf"
+  note: "With John Taylor, Tony Makin and Robert Carling."
+
+- title: "Bubble Poppers: Monetary Policy and the Myth of ‘Bubbles’ in Asset Prices"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 93"
+  date: 2009-03-01
+  when: "March 2009"
+  url: "files/monographs/pm93_Bubble_Poppers.pdf"
+
+- title: "Capital Xenophobia II"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 88"
+  date: 2008-11-01
+  when: "November 2008"
+  url: "files/monographs/pm88_Capital_Xenophobia_II.pdf"
+
+- title: "Government Intervention in Mortgage Finance: The Case Against ‘AussieMac’"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Issue Analysis 99"
+  date: 2008-09-08
+  url: "files/monographs/ia99_Government_Intervention_in_Mortgage_Finance.pdf"
+
+- title: "Reforming Central Banking"
+  type: monograph
+  outlet: "Centre for Independent Studies"
+  details: "Policy Monograph 36"
+  date: 1997-03-01
+  when: "March 1997"
+  url: "https://www.cis.org.au/publication/reforming-central-banking/"
+  note: "<a href=\"files/monographs/jel.pdf\"><em>Journal of Economic Literature</em> abstract</a>; <a href=\"files/monographs/bell.pdf\">review by Stephen Bell</a> in the <em>Australian Journal of Public Administration</em>."

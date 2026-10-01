@@ -1,7 +1,10 @@
 <%
-// Custom listing template for articles.qmd (data in articles.yml).
+// Custom listing template for articles.qmd and monographs.qmd
+// (data in articles.yml and monographs.yml).
 // With template-params: {group-by-year: true}, entries get year headings
 // and a row of year links at the top.
+// Entry types: monograph (italic title, plain publisher), chapter
+// ('Title', in editors, Book), anything else ('Title', italic outlet).
 // Notes: Quarto treats this output as Markdown, so each entry is built as a
 // single line of HTML. Quarto templates use lodash syntax: the "=" tag outputs raw
 // HTML and ${...} is reserved, so strings are joined with + instead.
@@ -10,7 +13,16 @@ const yearOf = function (item) { return String(item.date || '').slice(-4); };
 const years = [...new Set(items.map(yearOf))];
 const link = function (url, text) { return url ? '<a href="' + url + '">' + text + '</a>' : text; };
 const entry = function (item) {
-  let s = link(item.url, '‘' + item.title + '’') + ', <em>' + item.outlet + '</em>';
+  let s;
+  if (item.type === 'monograph') {
+    s = link(item.url, '<em>' + item.title + '</em>') + ', ' + item.outlet;
+  } else if (item.type === 'chapter') {
+    s = link(item.url, '‘' + item.title + '’') + ', in ';
+    if (item.editors) s += item.editors + ', ';
+    s += link(item['book-url'], '<em>' + item.book + '</em>') + ', ' + item.outlet;
+  } else {
+    s = link(item.url, '‘' + item.title + '’') + ', <em>' + item.outlet + '</em>';
+  }
   if (item.details) s += ', ' + item.details;
   s += ', ' + (item.when || item.date) + '.';
   if (item.note) s += ' ' + item.note;

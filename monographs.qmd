@@ -1,11 +1,17 @@
 ---
 title: "Monographs"
+toc: false
 listing:
-  contents: monographs.yml
-  type: table
-  sort: "date desc"
-  fields: [date, title, description]
-  date-format: "YYYY"
-  sort-ui: false
-  filter-ui: true
+  - id: monographs
+    contents: monographs.yml
+    template: _publications.ejs
+    template-params:
+      group-by-year: true
+    sort: "date desc"
+    date-format: "D MMMM YYYY"
 ---
+
+Research reports, monographs and book chapters.
+
+::: {#monographs}
+:::
