@@ -1,0 +1,5 @@
+/* Articles page */
+.pub-list { list-style: none; padding-left: 0; }
+.pub-list li { margin-bottom: 0.6em; padding-left: 1.2em; text-indent: -1.2em; }
+.pub-year { margin-top: 1.5em; border-bottom: 1px solid var(--bs-border-color); }
+.pub-years { line-height: 1.8; }

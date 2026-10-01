@@ -82,20 +82,49 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-journal .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-outlet','listing-details','listing-date','listing-when','listing-url','listing-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-description"],
+      searchColumns: ["listing-title","listing-type","listing-outlet","listing-details","listing-date","listing-when","listing-url","listing-pdf"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-journal'] = new List('listing-journal', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-opeds .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-outlet','listing-date','listing-url','listing-when','listing-also-label','listing-also-outlet','listing-also-when','listing-also-url','listing-also-title','listing-details','listing-note',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-type","listing-outlet","listing-date","listing-url","listing-when","listing-also-label","listing-also-outlet","listing-also-when","listing-also-url","listing-also-title","listing-details","listing-note"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-opeds'] = new List('listing-opeds', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -142,7 +171,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -373,7 +402,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://bsky.app/profile/insteconomics.bsky.social" class="sidebar-item-text sidebar-link"><i class="bi bi-butterfly" role="img">
+  <a href="https://bsky.app/profile/insteconomics.bsky.social" class="sidebar-item-text sidebar-link"><i class="bi bi-bluesky" role="img">
 </i> 
  <span class="menu-text">Bluesky</span></a>
   </div>
@@ -397,9 +426,7 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -423,54 +450,610 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Date
-</th>
-
-<th>
-Title
-</th>
-
-<th>
-Description
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1714485600000" data-listing-title-sort="Example article title">
-<td>
-<span class="listing-date">2024</span>
-</td>
-<td>
-<a href="https://doi.org/10.0000/example" class="title listing-title">Example article title</a>
-</td>
-<td>
-<span class="listing-description">Journal name, vol(issue)</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
+<section id="journal-and-policy-articles" class="level2">
+<h2 class="anchored" data-anchor-id="journal-and-policy-articles">Journal and policy articles</h2>
+<div id="listing-journal" class="quarto-listing quarto-listing-container-custom">
+<ul class="pub-list">
+<li data-index="0" data-listing-date-sort="1639054800000">
+<a href="https://doi.org/10.22459/AG.28.01.2021.06">‘The Reserve Bank of Australia’s pandemic response and the New Keynesian trap’</a>, <em>Agenda</em>, 28(1), pp.&nbsp;105–116, 2021. <a href="https://press-files.anu.edu.au/downloads/press/n9504/pdf/06_kirchner.pdf">[PDF]</a>
+</li>
+<li data-index="1" data-listing-date-sort="1582981200000">
+<a href="https://doi.org/10.1111/1467-8462.12365">‘The Effect of Changes in Monetary Policy on Consumer and Business Confidence’</a>, <em>The Australian Economic Review</em>, 53(1), pp.&nbsp;118–125, March 2020.
+</li>
+<li data-index="2" data-listing-date-sort="1559311200000">
+<a href="https://doi.org/10.1111/1467-8462.12319">‘State of Confusion: Economic Policy Uncertainty and International Trade and Investment’</a>, <em>The Australian Economic Review</em>, 52(2), pp.&nbsp;178–199, June 2019.
+</li>
+<li data-index="3" data-listing-date-sort="1543582800000">
+<a href="https://doi.org/10.1016/j.eap.2018.09.014">‘Money too tight to mention: The Reserve Bank of Australia’s financial stability mandate and low inflation’</a>, <em>Economic Analysis and Policy</em>, 60, pp.&nbsp;141–149, December 2018. <a href="files/articles/EAP.pdf">[PDF]</a>
+</li>
+<li data-index="4" data-listing-date-sort="1472652000000">
+<a href="https://www.cato.org/sites/cato.org/files/serials/files/cato-journal/2016/9/cj-v36n3-2.pdf">‘The G20 and Global Governance’</a>, <em>Cato Journal</em>, 36(3), Fall 2016.
+</li>
+<li data-index="5" data-listing-date-sort="1448888400000">
+<a href="files/articles/PolicyHFT.pdf">‘High Frequency Trading: Fact and Fiction’</a>, <em>Policy</em>, 31(4), Summer 2015–16.
+</li>
+<li data-index="6" data-listing-date-sort="1362056400000">
+<a href="files/articles/HowEconomistsInfluencePolicyAug2013.pdf">‘How Economists Succeed (and Fail) to Influence Policy’</a>, <em>Policy</em>, 29(1), Autumn 2013.
+</li>
+<li data-index="7" data-listing-date-sort="1354280400000">
+<a href="https://doi.org/10.1111/j.1467-8462.2012.00686.x">‘Foreign Direct Investment in Australia Following the Australia-US Free Trade Agreement’</a>, <em>The Australian Economic Review</em>, 45(4), pp.&nbsp;410–421, December 2012. <a href="files/articles/aerdec12.pdf">[PDF]</a>
+</li>
+<li data-index="8" data-listing-date-sort="1354280400000">
+<a href="https://doi.org/10.1007/s11127-011-9799-6">‘Federal Legislative Activism in Australia: A New Approach to Testing Wagner’s Law’</a>, <em>Public Choice</em>, 153(3–4), pp.&nbsp;375–392, December 2012. <a href="files/articles/PublicChoice.pdf">[PDF]</a>
+</li>
+<li data-index="9" data-listing-date-sort="1298898000000">
+<a href="https://doi.org/10.1111/j.1759-3441.2011.00098.x">‘Reforming Fiscal Responsibility Legislation’</a>, <em>Economic Papers</em>, 30(1), pp.&nbsp;29–32, March 2011. <a href="files/articles/ecpa_098.pdf">[PDF]</a>
+</li>
+<li data-index="10" data-listing-date-sort="1228050000000">
+<a href="files/articles/CommodityPricesAustEconomyPolicySummer0809.pdf">‘Commodity Prices and the Australian Economy: Trends versus Cycles’</a>, <em>Policy</em>, 24(4), Summer 2008–09.
+</li>
+<li data-index="11" data-listing-date-sort="1204290000000">
+<a href="files/articles/ANewErafortheRBA.pdf">‘A “New Era” for the Reserve Bank?’</a>, <em>Policy</em>, 24(1), Autumn 2008.
+</li>
+<li data-index="12" data-listing-date-sort="1188568800000">
+<a href="files/articles/FiscalPolicyandInterestRatesinAustraliaSpring2007.pdf">‘Fiscal Policy and Interest Rates in Australia’</a>, <em>Policy</em>, 23(3), Spring 2007.
+</li>
+<li data-index="13" data-listing-date-sort="1157032800000">
+<a href="files/articles/FutureFundorFutureEaterPolicySpring2006.pdf">‘Future Fund or Future Eater? The Opportunity Cost of Commonwealth Revenue Hoarding’</a>, <em>Policy</em>, 22(3), Spring 2006.
+</li>
+<li data-index="14" data-listing-date-sort="1093960800000">
+<a href="files/articles/moneymandarins.pdf">‘The Mandarins of Martin Place’</a>, <em>Policy</em>, 20(3), Spring 2004.
+</li>
+<li data-index="15" data-listing-date-sort="804520800000">
+<a href="https://doi.org/10.1080/00323269508402334">‘James Buchanan’s Normative Theory of the State’</a>, <em>Australian Journal of Political Science</em>, 30(2), pp.&nbsp;228–241, July 1995. <a href="files/articles/buchanan.pdf">[PDF]</a>
+</li>
+<li data-index="16" data-listing-date-sort="723128400000">
+<a href="files/articles/PolicySummer92-93Dumping.pdf">‘Australia Should Dump its Anti-Dumping Laws’</a>, <em>Policy</em>, Summer 1992–93.
+</li>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="op-eds" class="level2">
+<h2 class="anchored" data-anchor-id="op-eds">Op-eds</h2>
+<div id="listing-opeds" class="quarto-listing quarto-listing-container-custom">
+<p class="pub-years">
+<a href="#year-2022">2022</a> · <a href="#year-2021">2021</a> · <a href="#year-2020">2020</a> · <a href="#year-2019">2019</a> · <a href="#year-2018">2018</a> · <a href="#year-2016">2016</a> · <a href="#year-2014">2014</a> · <a href="#year-2013">2013</a> · <a href="#year-2012">2012</a> · <a href="#year-2011">2011</a> · <a href="#year-2010">2010</a> · <a href="#year-2009">2009</a> · <a href="#year-2008">2008</a> · <a href="#year-2007">2007</a> · <a href="#year-2006">2006</a>
+</p>
+<h3 class="anchored pub-year" id="year-2022">
+2022
+</h3>
+<ul class="pub-list">
+<li data-index="0" data-listing-date-sort="1645966800000">
+<a href="https://www.afr.com/world/europe/sanctions-are-the-least-bad-option-against-putin-s-aggression-20220228-p5a0df">‘Sanctions are the least bad option against Putin’s aggression’</a>, <em>The Australian Financial Review</em>, 28 February 2022.
+</li>
+<li data-index="1" data-listing-date-sort="1642510800000">
+<a href="https://www.afr.com/policy/economy/xi-s-rightly-wary-of-fed-tightening-20220117-p59oya">‘Xi’s rightly wary of Fed tightening’</a>, <em>The Australian Financial Review</em>, 19 January 2022.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2021">
+2021
+</h3>
+<ul class="pub-list">
+<li data-index="2" data-listing-date-sort="1640091600000">
+<a href="https://www.afr.com/policy/economy/australian-capital-and-talent-is-leaving-home-20211221-p59j84">‘Australian capital and talent is leaving home’</a>, <em>The Australian Financial Review</em>, 22 December 2021.
+</li>
+<li data-index="3" data-listing-date-sort="1638968400000">
+<a href="https://www.internationalaffairs.org.au/australianoutlook/china-wto-accession-us-economic-engagement-20-years/">‘China’s WTO Accession and US Economic Engagement 20 Years On’</a>, <em>Australian Outlook</em>, 9 December 2021.
+</li>
+<li data-index="4" data-listing-date-sort="1638190800000">
+<a href="https://www.afr.com/policy/economy/omicron-is-the-least-of-the-problems-for-global-trade-20211129-p59d6k">‘Omicron is the least of the problems for global trade’</a>, <em>The Australian Financial Review</em>, 30 November 2021.
+</li>
+<li data-index="5" data-listing-date-sort="1634130000000">
+<a href="https://www.internationalaffairs.org.au/australianoutlook/a-geoeconomic-alliance/">‘A geoeconomic alliance’</a>, <em>Australian Outlook</em>, 14 October 2021.
+</li>
+<li data-index="6" data-listing-date-sort="1632146400000">
+<a href="https://www.afr.com/policy/foreign-affairs/countering-china-s-trade-coercion-should-be-alliance-agenda-20210920-p58tab">‘Countering China’s trade coercion should be alliance agenda’</a>, <em>The Australian Financial Review</em>, 21 September 2021.
+</li>
+<li data-index="7" data-listing-date-sort="1625493600000">
+<a href="https://www.internationalaffairs.org.au/australianoutlook/the-australia-us-bilateral-investment-relationship-in-2020-taxing-times/">‘The Australia-US Bilateral Investment Relationship in 2020: Taxing Times’</a>, <em>Australian Outlook</em>, 6 July 2021.
+</li>
+<li data-index="8" data-listing-date-sort="1625493600000">
+<a href="https://www.themandarin.com.au/162068-us-investors-cool-on-australia/">‘US investors cool on Australia’</a>, <em>The Mandarin</em>, 6 July 2021.
+</li>
+<li data-index="9" data-listing-date-sort="1622988000000">
+<a href="https://www.afr.com/policy/economy/g7-tax-deal-is-a-threat-to-reformers-20210606-p57yla">‘G7 tax deal a threat to refomers’</a>, <em>The Australian Financial Review</em>, 7 June 2021.
+</li>
+<li data-index="10" data-listing-date-sort="1620050400000">
+<a href="https://www.afr.com/politics/higher-corporate-taxes-make-paying-for-biden-s-spending-harder-20210503-p57ok3">‘Higher corporate taxes make paying for Biden’s spending harder’</a>, <em>The Australian Financial Review</em>, 4 May 2021.
+</li>
+<li data-index="11" data-listing-date-sort="1618840800000">
+<a href="https://www.themandarin.com.au/154385-national-security-looms-large-for-foreign-investment/">‘National security looms large for foreign investment’</a>, <em>The Mandarin</em>, 20 April 2021.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2020">
+2020
+</h3>
+<ul class="pub-list">
+<li data-index="12" data-listing-date-sort="1606050000000">
+<a href="https://www.themandarin.com.au/145617-australia-must-avoid-americas-demographic-stagnation/">‘Australia must avoid America’s demographic stagnation’</a>, <em>The Mandarin</em>, 23 November 2020.
+</li>
+<li data-index="13" data-listing-date-sort="1605445200000">
+<a href="https://theconversation.com/the-us-turns-its-back-on-skilled-migrants-giving-australia-an-opening-150088">‘The US has turned its back on skilled migrants, giving Australia an opening’</a>, <em>The Conversation</em>, 16 November 2020.
+</li>
+<li data-index="14" data-listing-date-sort="1598796000000">
+<a href="https://www.afr.com/policy/economy/the-new-activist-fed-will-pile-more-pressure-on-to-the-rba-20200827-p55q16">‘How the activist Fed will pile more pressure on the RBA’</a>, <em>The Australian Financial Review</em>, 31 August 2020.
+</li>
+<li data-index="15" data-listing-date-sort="1594216800000">
+<a href="https://www.themandarin.com.au/135984-opinion-chinas-behaviour-warrants-increased-scrutiny-of-foreign-investment/">‘China’s behaviour warrants increased scrutiny of foreign investment’</a>, <em>The Mandarin</em>, 9 July 2020.
+</li>
+<li data-index="16" data-listing-date-sort="1590328800000">
+<a href="https://www.canberratimes.com.au/story/6767151/the-us-is-central-to-this-china-trade-quarrel/?cspt=1590361370|01feb6136fadad51133c884d4935b6b6">‘The US is central to this China trade quarrel’</a>, <em>The Canberra Times</em>, 25 May 2020.
+</li>
+<li data-index="17" data-listing-date-sort="1589378400000">
+<a href="https://www.afr.com/policy/foreign-affairs/birmingham-on-thin-ice-challenging-china-to-take-australia-to-the-wto-20200514-p54sso">‘Birmingham on thin ice challenging China to take Australia to the WTO’</a>, <em>The Australian Financial Review</em>, 14 May 2020.
+</li>
+<li data-index="18" data-listing-date-sort="1587477600000">
+<a href="https://www.ceda.com.au/news-and-resources/opinion/economy/what-covid-19-means-for-australian-productivity">‘What COVID-19 means for Australian productivity’</a>, <em>CEDA Blog</em>, 22 April 2020.
+</li>
+<li data-index="19" data-listing-date-sort="1587045600000">
+<a href="https://www.abc.net.au/news/2020-04-17/coronavirus-globalisation-setback-maintain-trade-links/12146876">‘Coronavirus means globalisation has suffered but we must not give up on trade links’</a>, <em>ABC Online</em>, 17 April 2020.
+</li>
+<li data-index="20" data-listing-date-sort="1585054800000">
+<a href="https://www.ussc.edu.au/rba-should-have-followed-feds-lead">‘RBA should have followed Fed’s lead’</a>, <em>The 45th</em>, 25 March 2020.
+</li>
+<li data-index="21" data-listing-date-sort="1584882000000">
+<a href="https://theconversation.com/itd-be-a-mistake-to-shut-financial-markets-more-than-ever-we-need-them-to-work-134387">‘It’d be a mistake to shut financial markets: more than ever, we need them to work’</a>, <em>The Conversation</em>, 23 March 2020.
+</li>
+<li data-index="22" data-listing-date-sort="1580821200000">
+<a href="https://www.afr.com/policy/economy/rba-s-foot-dragging-leaves-economy-dangerously-exposed-20200204-p53xgw">‘RBA’s foot-dragging leaves economy dangerously exposed’</a>, <em>The Australian Financial Review</em>, 5 February 2020.
+</li>
+<li data-index="23" data-listing-date-sort="1580734800000">
+<a href="https://theconversation.com/the-evidence-suggests-reserve-bank-rate-cuts-dont-hurt-confidence-130799">‘The evidence suggests Reserve Bank rate cuts don’t hurt confidence’</a>, <em>The Conversation</em>, 4 February 2020.
+</li>
+<li data-index="24" data-listing-date-sort="1579698000000">
+<a href="https://www.afr.com/world/north-america/us-china-trade-deal-is-spin-for-trump-s-failed-protectionism-20200122-p53tlo">‘US-China trade deal is spin for Trump’s failed protectionism’</a>, <em>The Australian Financial Review</em>, 23 January 2020.
+</li>
+<li data-index="25" data-listing-date-sort="1578488400000">
+<a href="https://www.afr.com/markets/currencies/don-t-bank-on-us-dollar-demise-20200108-p53pos">‘Don’t bank on US dollar demise’</a>, <em>The Australian Financial Review</em>, 9 January 2020.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2019">
+2019
+</h3>
+<ul class="pub-list">
+<li data-index="26" data-listing-date-sort="1576414800000">
+<a href="https://www.afr.com/policy/economy/us-protectionism-a-costly-failure-20191215-p53k2e">‘US protectionism a costly failure’</a>, <em>The Australian Financial Review</em>, 16 December 2019.
+</li>
+<li data-index="27" data-listing-date-sort="1574773200000">
+<a href="https://theconversation.com/now-we-know-the-reserve-bank-has-spelled-out-what-it-will-do-when-rates-approach-zero-127697">‘Now we know. The Reserve Bank has spelled out what it will do when rates approach zero’</a>, <em>The Conversation</em>, 27 November 2019.
+</li>
+<li data-index="28" data-listing-date-sort="1572958800000">
+<a href="https://www.afr.com/policy/economy/the-treasurer-should-not-let-the-rba-off-the-hook-so-easily-20191105-p537j6">‘The Treasurer should not let the RBA off the hook so easily’</a>, <em>The Australian Financial Review</em>, 6 November 2019.
+</li>
+<li data-index="29" data-listing-date-sort="1570971600000">
+<a href="https://www.afr.com/world/north-america/trump-s-fake-trade-deal-comes-at-a-high-price-for-global-economy-20191013-p5306s">‘Trump’s fake trade deal comes at a high price for global economy’</a>, <em>The Australian Financial Review</em>, 14 October 2019.
+</li>
+<li data-index="30" data-listing-date-sort="1570453200000">
+<a href="When interest rates approach zero, the RBA must rethink monetary policy">‘When interest rates approach zero, the RBA must rethink monetary policy’</a>, <em>ABC Online</em>, 8 October 2019.
+</li>
+<li data-index="31" data-listing-date-sort="1565704800000">
+<a href="https://www.ussc.edu.au/currency-wars-lack-real-weapons">‘Currency wars lack real weapons’</a>, <em>The 45th</em>, 14 August 2019.
+</li>
+<li data-index="32" data-listing-date-sort="1564063200000">
+<a href="https://www.afr.com/policy/economy/beware-of-romanticising-the-legacies-of-bretton-woods-20190725-p52al3">‘Beware of romaticising the legacies of Bretton Woods’</a>, <em>The Australian Financial Review</em>, 26 July 2019.
+</li>
+<li data-index="33" data-listing-date-sort="1560866400000">
+<a href="https://www.themandarin.com.au/110122-quantitative-easing-does-not-increase-inequality/">‘Quantitative easing does not increase inequality’</a>, <em>The Mandarin</em>, 19 June 2019.
+</li>
+<li data-index="34" data-listing-date-sort="1560780000000">
+<a href="https://theconversation.com/below-zero-is-reverse-how-the-reserve-bank-would-make-quantitative-easing-work-118843">‘How the Reserve Bank would make quantitative easing work’</a>, <em>The Conversation</em>, 18 June 2019.
+</li>
+<li data-index="35" data-listing-date-sort="1559656800000">
+<a href="https://www.ussc.edu.au/us-fed-shows-rba-is-not-about-to-run-out-of-ammunition">‘US Fed shows the RBA is not about to “run out of ammunition”’</a>, <em>The 45th</em>, 5 June 2019.
+</li>
+<li data-index="36" data-listing-date-sort="1557324000000">
+<a href="https://www.themandarin.com.au/108191-new-government-should-put-phil-lowe-on-the-hook-for-inflation/">‘New government should put Phil Lowe on the hook for inflation’</a>, <em>The Mandarin</em>, 9 May 2019.
+</li>
+<li data-index="37" data-listing-date-sort="1557324000000">
+<a href="https://www.afr.com/policy/economy/why-a-us-china-deal-won-t-end-the-trade-war-20190508-p51l6q">‘Why a US-China trade deal won’t end the trade war’</a>, <em>The Australian Financial Review</em>, 9 May 2019.
+</li>
+<li data-index="38" data-listing-date-sort="1551186000000">
+<a href="https://www.afr.com/opinion/there-are-surprising-answers-to-the-puzzle-of-stagnant-wages-20190226-h1bpz1">‘There are surprising answers to the puzzle of stagnant wages’</a>, <em>The Australian Financial Review</em>, 27 February 2019.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2018">
+2018
+</h3>
+<ul class="pub-list">
+<li data-index="39" data-listing-date-sort="1544014800000">
+<a href="https://medium.com/@usstudiescentre/australias-g20-plans-died-in-buenos-aires-7dab2da26a17">‘Australia’s G20 plans died in Buenos Aires’</a>, <em>Medium</em>, 6 December 2018.
+</li>
+<li data-index="40" data-listing-date-sort="1542114000000">
+<a href="files/articles/KeepinganOpenDoortotheWorld.pdf">‘Defending Australia’s open door: Don’t blame globalisation for populism’</a>, <em>The Australian Financial Review</em>, 14 November 2018.
+</li>
+<li data-index="41" data-listing-date-sort="1539262800000">
+<a href="https://web.archive.org/web/20181012054340/https://www.businessinsider.com.au/us-bond-bears-right-2018-10">‘US bond bears are right, but for all the wrong reasons’</a>, <em>Business Insider</em>, 12 October 2018.
+</li>
+<li data-index="42" data-listing-date-sort="1538229600000">
+<a href="https://www.afr.com/opinion/us-fdi-a-casualty-of-donald-trumps-trade-war-20180928-h15z9x">‘US foreign investment a casualty of Donald Trump’s trade war’</a>, <em>The Australian Financial Review</em>, 30 September 2018.
+</li>
+<li data-index="43" data-listing-date-sort="1536674400000">
+<a href="https://www.abc.net.au/news/2018-09-12/lehman-brothers-collapse-the-moment-that-wasnt/10222638">‘The so-called “Lehman moment” was more symptom than cause’</a>, <em>ABC Online</em>, 12 September 2018.
+</li>
+<li data-index="44" data-listing-date-sort="1533564000000">
+<a href="https://www.smh.com.au/world/north-america/should-national-security-be-a-deal-breaker-20180805-p4zvn0.html">‘Should national security be a deal-breaker’</a>, <em>The Sydney Morning Herald</em>, 7 August 2018.
+</li>
+<li data-index="45" data-listing-date-sort="1531231200000">
+<a href="https://www.abc.net.au/news/2018-07-11/donald-trump-us-china-trade-war/9971560">‘Donald Trump and US tariffs: A 1930s-style trade war will be hard to avert’</a>, <em>ABC Online</em>, 11 July 2018.
+</li>
+<li data-index="46" data-listing-date-sort="1526911200000">
+<a href="https://www.afr.com/opinion/trump-is-fighting-trade-war-against-economic-fundamentals-20180522-h10efh">‘Trump is fighting trade war against economic fundamentals’</a>, <em>The Australian Financial Review</em>, 22 May 2018.
+</li>
+<li data-index="47" data-listing-date-sort="1523109600000">
+<a href="https://www.afr.com/opinion/how-trump-should-really-tackle-beijings-technology-thefts-20180408-h0yh86">‘How Trump should really tackle Beijing’s technology thefts’</a>, <em>The Australian Financial Review</em>, 8 April 2018.
+</li>
+<li data-index="48" data-listing-date-sort="1521118800000">
+<a href="https://theconversation.com/the-rbas-shift-to-worrying-about-financial-stability-could-be-hurting-australian-wages-96714">‘The RBA’s shift to worrying about financial stability could be hurting Australian wages’</a>, <em>The Conversation</em>, 16 March 2018.
+</li>
+<li data-index="49" data-listing-date-sort="1519909200000">
+<a href="https://www.afr.com/policy/steel-tariffs-will-undermine-american-national-security-20180302-h0ww1d">‘Steel tariffs will take America back to the 1930s’</a>, <em>The Australian Financial Review</em>, 2 March 2018.
+</li>
+<li data-index="50" data-listing-date-sort="1518526800000">
+<a href="https://www.afr.com/opinion/trump-has-a-chance-to-shape-us-monetary-policy-for-years-20180213-h0w05o">‘Donald Trump has a chance to shape US monetary policy for years’</a>, <em>The Australian Financial Review</em>, 14 February 2018.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2016">
+2016
+</h3>
+<ul class="pub-list">
+<li data-index="51" data-listing-date-sort="1452430800000">
+<a href="https://www.afr.com/policy/economys-engine-room-right-size-for-job-20160110-gm2sol">‘Economy’s engine room right size for job’</a>, <em>The Australian Financial Review</em>, 11 January 2016.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2014">
+2014
+</h3>
+<ul class="pub-list">
+<li data-index="52" data-listing-date-sort="1406210400000">
+<a href="https://www.cis.org.au/commentary/opinion/australia-mustnt-jump-the-gun-on-macro-prudential-policy/">‘Australia mustn’t jump the gun on macro-prudential policy’</a>, <em>Business Spectator</em>, 25 July 2014.
+</li>
+<li data-index="53" data-listing-date-sort="1404914400000">
+<a href="https://www.cis.org.au/commentary/opinion/scapegoating-investors-wont-slow-up-house-prices/">‘Scapegoating investors won’t slow up house prices’</a>, <em>The Australian Financial Review</em>, 10 July 2014.
+</li>
+<li data-index="54" data-listing-date-sort="1397138400000">
+<a href="https://www.cis.org.au/commentary/opinion/europe-holds-its-breath-for-ecb-action/">‘Europe holds its breath for ECB action’</a>, <em>Business Spectator</em>, 11 April 2014.
+</li>
+<li data-index="55" data-listing-date-sort="1395838800000">
+<a href="https://web.archive.org/web/20140328131234/http://www.businessspectator.com.au:80/article/2014/3/27/economy/official-statistics-need-culture-change">‘Official statistics need culture change’</a>, <em>Business Spectator</em>, 27 March 2014.
+</li>
+<li data-index="56" data-listing-date-sort="1395234000000">
+<a href="https://www.smh.com.au/opinion/dont-blame-foreigners-for-rising-house-prices-20140319-352nn.html">‘Don’t blame foreigners for rising house prices’</a>, <em>The Sydney Morning Herald</em>, 20 March 2014.
+</li>
+<li data-index="57" data-listing-date-sort="1390395600000">
+<a href="http://www.theaustralian.com.au/opinion/forget-trying-to-curb-demand-build-more-houses/story-e6frg6zo-1226807923196#">‘Forget trying to curb demand, build more houses’</a>, <em>The Australian</em>, 23 January 2014.
+</li>
+<li data-index="58" data-listing-date-sort="1388840400000">
+<a href="https://www.cis.org.au/commentary/opinion/playing-the-currencies-game-is-fraught-with-risk/">‘Playing the currencies game is fraught with risk’</a>, <em>The Australian Financial Review</em>, 5 January 2014.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2013">
+2013
+</h3>
+<ul class="pub-list">
+<li data-index="59" data-listing-date-sort="1387112400000">
+<a href="https://www.cis.org.au/commentary/opinion/we-must-fortify-fiscal-rules/">‘We must fortify fiscal rules’</a>, <em>The Canberra Times</em>, 16 December 2013.
+</li>
+<li data-index="60" data-listing-date-sort="1386507600000">
+<a href="https://www.afr.com/policy/we-are-still-stuck-in-the-pre-1983-era-on-fiscal-policy-20131209-iyp26">‘We are still stuck in the pre-1983 era on fiscal policy’</a>, <em>The Australian Financial Review</em>, 9 December 2013.
+</li>
+<li data-index="61" data-listing-date-sort="1385989200000">
+<a href="https://www.cis.org.au/commentary/opinion/when-regulation-becomes-political-interference/">‘When regulation becomes political interference’</a>, <em>The Australian Financial Review</em>, 3 December 2013.
+</li>
+<li data-index="62" data-listing-date-sort="1385816400000">
+<a href="files/articles/Infinance.pdf">‘Reforming the regulation of foreign direct investment’</a>, <em>Infinance (FINSIA)</em>, December 2013.
+</li>
+<li data-index="63" data-listing-date-sort="1380722400000">
+<a href="https://www.cis.org.au/commentary/opinion/credit-controls-wont-fix-housing/">‘Credit controls won’t fix housing’</a>, <em>The Australian Financial Review</em>, 3 October 2013.
+</li>
+<li data-index="64" data-listing-date-sort="1380031200000">
+<a href="https://www.cis.org.au/commentary/opinion/a-dollar-of-super-is-not-a-dollar-saved/">‘A dollar of super is not a dollar saved’</a>, <em>Business Spectator</em>, 25 September 2013.
+</li>
+<li data-index="65" data-listing-date-sort="1373896800000">
+<a href="https://www.cis.org.au/commentary/opinion/seizing-a-sino-free-trade-moment/">‘Seizing a Sino free trade moment’</a>, <em>Business Spectator</em>, 16 July 2013.
+</li>
+<li data-index="66" data-listing-date-sort="1371996000000">
+<a href="https://www.cis.org.au/commentary/opinion/why-tax-free-imports-are-a-retail-red-herring/">‘Why tax-free imports are a retail red herring’</a>, <em>Business Spectator</em>, 24 June 2013.
+</li>
+<li data-index="67" data-listing-date-sort="1370354400000">
+<a href="https://www.cis.org.au/commentary/opinion/stamp-out-the-anti-dumping-dinosaur-laws/">‘Stamp out the anti-dumping dinosaur laws’</a>, <em>Business Spectator</em>, 5 June 2013.
+</li>
+<li data-index="68" data-listing-date-sort="1366207200000">
+<a href="https://www.investsmart.com.au/investment-news/why-a-forex-foray-could-burn-the-reserve/100004">‘Why a forex foray could burn the Reserve’</a>, <em>Business Spectator</em>, 18 April 2013.
+</li>
+<li data-index="69" data-listing-date-sort="1357563600000">
+<a href="https://theconversation.com/increasing-the-super-contribution-rate-is-a-second-rate-solution-11467">‘Increasing the super contribution rate is a second-rate solution’</a>, <em>The Conversation</em>, 8 January 2013.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2012">
+2012
+</h3>
+<ul class="pub-list">
+<li data-index="70" data-listing-date-sort="1354021200000">
+<a href="https://www.cis.org.au/commentary/opinion/better-ideas-than-raising-super-guarantee/">‘Better ideas than raising super guarantee’</a>, <em>The Australian Financial Review</em>, 28 November 2012.
+</li>
+<li data-index="71" data-listing-date-sort="1352034000000">
+<a href="https://www.cis.org.au/commentary/opinion/the-interest-rate-cut-that-wasnt/">‘The interest rate cut that wasn’t’</a>, <em>Business Spectator</em>, 5 November 2012.
+</li>
+<li data-index="72" data-listing-date-sort="1351515600000">
+<a href="http://www.theaustralian.com.au/national-affairs/opinion/prime-minister-this-asian-century-is-so-last-century/story-e6frgd0x-1226505623418">‘Prime Minister, this Asian century is so last century’</a>, <em>The Australian</em>, 30 October 2012.
+</li>
+<li data-index="73" data-listing-date-sort="1344780000000">
+<a href="https://www.cis.org.au/commentary/opinion/the-buck-must-not-stop-with-the-rba/">‘The buck must not stop with the RBA’</a>, <em>Business Spectator</em>, 13 August 2012.
+</li>
+<li data-index="74" data-listing-date-sort="1344175200000">
+<a href="http://www.theaustralian.com.au/national-affairs/opinion/coalition-tightening-of-foreign-investment-policy-a-step-backwards/story-e6frgd0x-1226443380419">‘Coalition tightening of foreign investment policy a step backwards’</a>, <em>The Australian</em>, 6 August 2012.
+</li>
+<li data-index="75" data-listing-date-sort="1337608800000">
+<a href="https://www.cis.org.au/commentary/opinion/why-the-euro-project-must-end/">‘Why the euro project must end’</a>, <em>Business Spectator</em>, 22 May 2012.
+</li>
+<li data-index="76" data-listing-date-sort="1337522400000">
+<a href="files/articles/WAFutureFund.pdf">‘There are better ways to ensure state’s future’</a>, <em>The West Australian</em>, 21 May 2012.
+</li>
+<li data-index="77" data-listing-date-sort="1337522400000">
+<a href="https://theconversation.com/independent-body-needed-to-preserve-integrity-of-fiscal-forecasts-7063">‘Independent body needed to preserve integrity of fiscal forecasts’</a>, <em>The Conversation</em>, 21 May 2012.
+</li>
+<li data-index="78" data-listing-date-sort="1334671200000">
+<a href="https://theconversation.com/how-taxing-housing-diminishes-affordability-6486">‘How taxing housing diminishes affordability’</a>, <em>The Conversation</em>, 18 April 2012. Reprinted in in <a href="https://web.archive.org/web/20120420221221/http://www.businessspectator.com.au:80/bs.nsf/Article/housing-property-affordability-henry-tax-review-ca-pd20120418-TFVVX?"><em>Business Spectator</em></a>, 18 April 2012.
+</li>
+<li data-index="79" data-listing-date-sort="1332421200000">
+<a href="https://www.cis.org.au/commentary/opinion/murrays-future-fund-brace-is-broken/">‘Murray’s Future Fund brace is broken’</a>, <em>Business Spectator</em>, 23 March 2012.
+</li>
+<li data-index="80" data-listing-date-sort="1329656400000">
+<a href="https://theconversation.com/future-funds-or-future-eaters-the-case-against-a-sovereign-wealth-fund-for-australia-5450">‘Future Funds or Future Eaters? The case against a sovereign wealth fund for Australia’</a>, <em>The Conversation</em>, 20 February 2012.
+</li>
+<li data-index="81" data-listing-date-sort="1328619600000">
+<a href="https://www.cis.org.au/commentary/opinion/give-austerity-a-chance/">‘Give austerity a chance’</a>, <em>The Australian Financial Review</em>, 8 February 2012.
+</li>
+<li data-index="82" data-listing-date-sort="1326718800000">
+<a href="https://theconversation.com/a-country-that-makes-things-theres-more-to-australia-than-manufacturing-4937">‘A country that ‘makes things’? There’s more to Australia than manufacturing’</a>, <em>The Conversation</em>, 17 January 2012.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2011">
+2011
+</h3>
+<ul class="pub-list">
+<li data-index="83" data-listing-date-sort="1323694800000">
+<a href="https://www.onlineopinion.com.au/view.asp?article=13004">‘The long march of Fightback’</a>, <em>Online Opinion</em>, 13 December 2011. Also published as ‘The Fightback! lesson: how politics can stymie good public policy’ in <a href="https://www.smh.com.au/politics/federal/the-fightback-lesson-how-politics-can-stymie-good-public-policy-20111225-1p9aq.html"><em>The Sydney Morning Herald</em></a>, 26 December 2011.
+</li>
+<li data-index="84" data-listing-date-sort="1321880400000">
+<a href="https://theconversation.com/has-the-mining-boom-given-us-too-much-luck-hardly-4376">‘Has the mining boom given us ‘too much luck’? Hardly’</a>, <em>The Conversation</em>, 22 November 2011.
+</li>
+<li data-index="85" data-listing-date-sort="1315317600000">
+<a href="https://www.cis.org.au/commentary/opinion/time-to-revisit-rba-board/">‘Time to revisit RBA Board’</a>, <em>The Australian Financial Review</em>, 7 September 2011.
+</li>
+<li data-index="86" data-listing-date-sort="1312984800000">
+<a href="https://theconversation.com/keep-an-eye-on-the-underlying-economic-threat-not-market-ups-and-downs-2751">‘Keep an eye on the underlying economic threat, not market ups and downs’</a>, <em>The Conversation</em>, 11 August 2011.
+</li>
+<li data-index="87" data-listing-date-sort="1311602400000">
+<a href="https://theconversation.com/what-our-economists-really-think-about-politics-2378">‘What our economists really think’</a>, <em>The Conversation</em>, 26 July 2011.
+</li>
+<li data-index="88" data-listing-date-sort="1309528800000">
+<a href="https://www.cis.org.au/commentary/opinion/foreign-investment-will-boost-food-security/">‘Foreign investment will boost food security’</a>, <em>The Australian Financial Review</em>, 2–3 July 2011.
+</li>
+<li data-index="89" data-listing-date-sort="1305813600000">
+<a href="https://www.abc.net.au/news/2011-05-20/kirchner---budget-office-helps-pollies2c-not-punters/2721450">‘Budget office helps pollies, not punters’</a>, <em>The Drum (ABC)</em>, 20 May 2011.
+</li>
+<li data-index="90" data-listing-date-sort="1305554400000">
+<a href="https://theconversation.com/freddie-mac-and-fannie-mae-guaranteed-to-fail-1307">‘Freddie Mac and Fannie Mae: guaranteed to fail?’</a>, <em>The Conversation</em>, 17 May 2011.
+</li>
+<li data-index="91" data-listing-date-sort="1304431200000">
+<a href="files/articles/NCH4MAY11.pdf">‘Population growth makes us smarter, richer’</a>, <em>Newcastle Herald</em>, 4 May 2011.
+</li>
+<li data-index="92" data-listing-date-sort="1302616800000">
+<a href="http://www.theaustralian.com.au/national-affairs/commentary/trimming-to-fit-budgets-reduced-revenue/story-e6frgd0x-1226038104396">‘Trimming to fit budget’s reduced revenue’</a>, <em>The Australian</em>, 13 April 2011.
+</li>
+<li data-index="93" data-listing-date-sort="1302444000000">
+<a href="files/articles/straitstimes11Apr2011.pdf">‘A failure of political leadership’</a>, <em>The Straits Times</em>, 11 April 2011.
+</li>
+<li data-index="94" data-listing-date-sort="1300194000000">
+<a href="https://www.onlineopinion.com.au/view.asp?article=11755">‘A forgotten financial failure’</a>, <em>Online Opinion</em>, 16 March 2011. Also published in <a href="https://www.cis.org.au/commentary/opinion/a-forgotten-financial-failure/"><em>Business Spectator</em></a>, 26 March 2011.
+</li>
+<li data-index="95" data-listing-date-sort="1298984400000">
+<a href="http://www.theaustralian.com.au/business/anti-dumping-rules-have-a-greater-potential-to-harm-producers-and-consumers/story-e6frg8zx-1226014363959">‘Anti-dumping rules have a greater potential to harm producers and consumers’</a>, <em>The Australian</em>, 2 March 2011.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2010">
+2010
+</h3>
+<ul class="pub-list">
+<li data-index="96" data-listing-date-sort="1292245200000">
+<a href="https://web.archive.org/web/20110102044903/http://theage.domain.com.au:80/home-investor-centre/mortgage-industry-takes-its-4bn-win-borrowers-lose-20101214-18w4i.html">‘Mortgage industry takes its $4bn win’</a>, <em>The Age</em>, 14 December 2010.
+</li>
+<li data-index="97" data-listing-date-sort="1289998800000">
+<a href="http://www.theaustralian.com.au/business/attacks-on-banks-overlook-effect-of-strong-growth-prospects/story-e6frg8zx-1225955207724">‘Attacks on banks overlook effect of strong growth prospects’</a>, <em>The Australian</em>, 18 November 2010.
+</li>
+<li data-index="98" data-listing-date-sort="1289826000000">
+<a href="http://online.wsj.com/article/SB10001424052748704312504575617933648395028.html?mod=asia_opinion">‘Aussie banker bashing’</a>, <em>The Wall Street Journal</em>, 16 November 2010.
+</li>
+<li data-index="99" data-listing-date-sort="1289826000000">
+<a href="https://www.abc.net.au/news/2010-11-16/g20_should_tend_to_their_own_backyards/41084">‘G20 should tend to their own backyards’</a>, <em>The Drum (ABC)</em>, 16 November 2010.
+</li>
+<li data-index="100" data-listing-date-sort="1284991200000">
+<a href="https://web.archive.org/web/20101104154612/http://cis.org.au/media-information/opinion-pieces/article/2186-fiscal-authority-the-way-to-go">‘Fiscal authority is the way to go’</a>, <em>The Australian</em>, 21 September 2010.
+</li>
+<li data-index="101" data-listing-date-sort="1283781600000">
+<a href="https://www.smh.com.au/politics/federal/a-small-australia-limits-our-creativity-20100906-14xvj.html">‘A small Australia limits our creativity’</a>, <em>The Sydney Morning Herald</em>, 7 September 2010.
+</li>
+<li data-index="102" data-listing-date-sort="1282140000000">
+<a href="http://www.theaustralian.com.au/national-affairs/commentary/city-got-big-but-never-grew-up/story-e6frgd0x-1225907040578">‘City got big but never grew up’</a>, <em>The Australian</em>, 19 August 2010.
+</li>
+<li data-index="103" data-listing-date-sort="1279116000000">
+<a href="http://www.theaustralian.com.au/business/opinion/the-mining-tax-debate-highlights-the-terms-of-trade-boom/story-e6frg9if-1225891819484">‘Avoiding the sovereign wealth fund risks’</a>, <em>The Australian</em>, 15 July 2010.
+</li>
+<li data-index="104" data-listing-date-sort="1273586400000">
+<a href="http://www.theaustralian.com.au/news/opinion/population-zealots-aim-at-the-wrong-targets/story-e6frg6zo-1225865198595">‘Population zealots aim at the wrong targets’</a>, <em>The Australian</em>, 12 May 2010.
+</li>
+<li data-index="105" data-listing-date-sort="1272290400000">
+<a href="https://www.cis.org.au/commentary/opinion/migrants-add-to-growth-hopes/">‘Migrants add to growth hopes’</a>, <em>The Canberra Times</em>, 27 April 2010.
+</li>
+<li data-index="106" data-listing-date-sort="1271080800000">
+<a href="https://www.smh.com.au/business/bond-market-vigilantes-should-weigh-risks-of-continued-inactivity-20100412-s43b.html">‘Bond Market Vigilantes Should Weigh Risks of Continued Inactivity’</a>, <em>The Sydney Morning Herald</em>, 13 April 2010.
+</li>
+<li data-index="107" data-listing-date-sort="1268744400000">
+<a href="https://www.theage.com.au/business/misguided-government-gets-poor-return-for-largesse-20100316-qcod.html">‘Misguided government gets poor return for largesse’</a>, <em>The Age</em>, 17 March 2010.
+</li>
+<li data-index="108" data-listing-date-sort="1267362000000">
+<a href="files/articles/ctoped1mar10.pdf">‘Benefits Grow in Monthly CPI’</a>, <em>The Canberra Times</em>, 1 March 2010.
+</li>
+<li data-index="109" data-listing-date-sort="1266498000000">
+<a href="https://www.theaustralian.com.au/commentary/opinion/more-inscrutable-than-the-chinese/news-story/1e826e285b99c9b2c7e85db5e4634a92">‘More Inscrutable than the Chinese’</a>, <em>The Australian</em>, 19 February 2010.
+</li>
+<li data-index="110" data-listing-date-sort="1264078800000">
+<a href="http://www.theaustralian.com.au/business/opinion/imbalances-essential-to-global-economic-system/story-e6frg9if-1225822308564">‘Imbalances Essential to Global Economic System’</a>, <em>The Australian</em>, 22 January 2010.
+</li>
+<li data-index="111" data-listing-date-sort="1263906000000">
+<a href="https://www.cis.org.au/commentary/opinion/economic-policy-must-re-earn-our-respect/">‘Economic Policy Must Re-Earn Our Respect’</a>, <em>Business Spectator</em>, 20 January 2010.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2009">
+2009
+</h3>
+<ul class="pub-list">
+<li data-index="112" data-listing-date-sort="1261746000000">
+<a href="https://www.smh.com.au/politics/federal/the-seasonal-satisfaction-index-20091225-ley0.html">‘The seasonal satisfaction index’</a>, <em>The Sydney Morning Herald</em>, 26 December 2009.
+</li>
+<li data-index="113" data-listing-date-sort="1261314000000">
+<a href="https://www.stuff.co.nz/dominion-post/opinion/3180326/Labour-should-not-take-its-eyes-off-the-target">‘Labour Should Not Takes its Eyes Off the Target’</a>, <em>The Dominion Post (NZ)</em>, 21 December 2009.
+</li>
+<li data-index="114" data-listing-date-sort="1260882000000">
+<a href="http://www.theaustralian.com.au/news/opinion/big-spending-poor-results/story-e6frg6zo-1225810745078">‘Big spending, poor results’</a>, <em>The Australian</em>, 16 December 2009.
+</li>
+<li data-index="115" data-listing-date-sort="1258894800000">
+<a href="http://online.wsj.com/article/SB10001424052748704888404574549461322387956.html">‘Kiwi Monetary Muddle’</a>, <em>The Wall Street Journal</em>, 23 November 2009.
+</li>
+<li data-index="116" data-listing-date-sort="1258462800000">
+<a href="http://www.theaustralian.com.au/news/opinion/doomsayer-does-his-dough/story-e6frg6zo-1225799013391">‘Doomsayer Does His Dough’</a>, <em>The Australian</em>, 18 November 2009.
+</li>
+<li data-index="117" data-listing-date-sort="1258376400000">
+<a href="https://www.theage.com.au/business/end-of-trend-is-nigh-for-central-bank-sales-of-gold-20091116-iidb.html">‘End of Trend is Nigh for Central Bank Sales of Gold’</a>, <em>The Age</em>, 17 November 2009.
+</li>
+<li data-index="118" data-listing-date-sort="1257944400000">
+<a href="http://www.theaustralian.com.au/news/opinion/more-housesnot-taxes/story-e6frg6zo-1225796669608">‘More houses, not taxes’</a>, <em>The Australian</em>, 12 November 2009.
+</li>
+<li data-index="119" data-listing-date-sort="1257339600000">
+<a href="https://www.cis.org.au/commentary/opinion/us-dollar-down-but-not-out-as-kingpin-of-global-finance/">‘US Dollar Down But Not Out as Kingpin of Global Finance’</a>, <em>The Australian</em>, p.&nbsp;28, 5 November 2009.
+</li>
+<li data-index="120" data-listing-date-sort="1255438800000">
+<a href="https://web.archive.org/web/20111027233354/http://cis.org.au/media-information/opinion-pieces/article/42-policymakers-sold-australia-short">‘Forecasters sell Australia short’</a>, <em>The Australian Financial Review</em>, p.&nbsp;63, 14 October 2009.
+</li>
+<li data-index="121" data-listing-date-sort="1254146400000">
+<a href="http://online.wsj.com/article/SB10001424052748704471504574442281091477054.html">‘Canberra’s Investment Confusion’</a>, <em>The Wall Street Journal</em>, 29 September 2009.
+</li>
+<li data-index="122" data-listing-date-sort="1253109600000">
+<a href="https://web.archive.org/web/20100615150337/http://www.juedische-allgemeine.de:80/article/view/id/1475/highlight/kirchner&amp;hartwich">‘Prophet der Pleite’</a>, <em>Jüdische Allgemeine</em>, 17 September 2009. In German, with Oliver Hartwich.
+</li>
+<li data-index="123" data-listing-date-sort="1252936800000">
+<a href="https://www.cis.org.au/commentary/opinion/hewson-manifesto-was-ahead-of-its-time/">‘Hewson Manifesto Was Ahead of its Time’</a>, <em>The Australian</em>, 15 September 2009.
+</li>
+<li data-index="124" data-listing-date-sort="1252504800000">
+<a href="https://www.theage.com.au/business/economist-with-a-nose-for-trouble-20090909-fho8.html">‘Economist with a Nose for Trouble’</a>, <em>The Age</em>, 10 September 2009. With Oliver Hartwich.
+</li>
+<li data-index="125" data-listing-date-sort="1249394400000">
+<a href="files/articles/ctaa01105c_small.pdf">‘Treasurer’s Liberalisation Measures Should Go Deeper’</a>, <em>The Canberra Times</em>, 5 August 2009.
+</li>
+<li data-index="126" data-listing-date-sort="1248962400000">
+<a href="https://www.cis.org.au/commentary/opinion/nz-tries-harder-for-foreign-cash/">‘NZ Tries Harder for Foreign Cash’</a>, <em>The Age</em>, 31 July 2009.
+</li>
+<li data-index="127" data-listing-date-sort="1248357600000">
+<a href="https://web.archive.org/web/20170111153701/http://www.institutional-economics.com/index.php/section/comments/no_time_for_a_media-shy_central_banker/">‘Economic Debate Suffers from Too Much Reserve’</a>, <em>The Australian Financial Review</em>, 24 July 2009.
+</li>
+<li data-index="128" data-listing-date-sort="1247580000000">
+<a href="https://www.cis.org.au/commentary/opinion/end-the-budget-sideshow/">‘End the Budget Sideshow’</a>, <em>The Australian</em>, 15 July 2009. With Robert Carling.
+</li>
+<li data-index="129" data-listing-date-sort="1245420000000">
+<a href="https://web.archive.org/web/20090625181601/http://www.theaustralian.news.com.au:80/story/0,25197,25661426-30538,00.html">‘Short-Term Fixes Help Nobody’</a>, <em>The Weekend Australian</em>, p.&nbsp;19, 20 June 2009.
+</li>
+<li data-index="130" data-listing-date-sort="1245420000000">
+<a href="https://web.archive.org/web/20090625120045/http://www.businessspectator.com.au:80/bs.nsf/Article/Dont-villify-the-banks-pd20090618-T59VF?OpenDocument&amp;src=sph">‘A Bother Over Banks’</a>, <em>Business Spectator</em>, 20 June 2009.
+</li>
+<li data-index="131" data-listing-date-sort="1244556000000">
+<a href="https://www.cis.org.au/commentary/opinion/cant-stop-the-music/">‘Can’t Stop the Music’</a>, <em>Business Spectator</em>, 10 June 2009.
+</li>
+<li data-index="132" data-listing-date-sort="1242914400000">
+<a href="https://www.theage.com.au/business/the-madding-crowding-out-20090521-bh5z.html">‘The Madding Crowding Out’</a>, <em>The Age</em>, 22 May 2009.
+</li>
+<li data-index="133" data-listing-date-sort="1242223200000">
+<a href="https://web.archive.org/web/20090514235339/http://www.theaustralian.news.com.au:80/story/0,25197,25475539-7583,00.html">‘Hey Big Spender, Stop Stimulating’</a>, <em>The Australian</em>, 14 May 2009.
+</li>
+<li data-index="134" data-listing-date-sort="1238504400000">
+<a href="https://www.cis.org.au/commentary/opinion/fear-canberra-not-beijing/">‘Fear Canberra, Not Beijing’</a>, <em>Business Spectator</em>, 1 April 2009.
+</li>
+<li data-index="135" data-listing-date-sort="1238158800000">
+<a href="https://www.cis.org.au/commentary/opinion/should-keynes-have-a-seat-at-the-g20-table/">‘Should Keynes Have a Seat at the G20 Table?’</a>, <em>The Australian Financial Review</em>, pp.&nbsp;28–29, 28–29 March 2009.
+</li>
+<li data-index="136" data-listing-date-sort="1237381200000">
+<a href="https://www.smh.com.au/business/dont-blame-greenspans-monetary-policy-20090318-925f.html">‘Don’t blame Greenspan’s monetary policy’</a>, <em>The Age</em>, 19 March 2009.
+</li>
+<li data-index="137" data-listing-date-sort="1236085200000">
+<a href="https://www.cis.org.au/commentary/opinion/foreign-interest-is-all-win-for-australia/">‘Foreign Interest is All Win for Australia’</a>, <em>The Australian</em>, 4 March 2009.
+</li>
+<li data-index="138" data-listing-date-sort="1233666000000">
+<a href="https://www.cis.org.au/commentary/opinion/plan-delivers-little-bang-for-very-big-bucks/">‘Plan delivers little bang for very big bucks’</a>, <em>The Australian</em>, 4 February 2009.
+</li>
+<li data-index="139" data-listing-date-sort="1233061200000">
+<a href="https://web.archive.org/web/20170111152411/http://www.institutional-economics.com/index.php/section/comments/rudd_bank_puts_taxpayers_last/">‘Public Will Wear the Risk’</a>, <em>The Australian Financial Review</em>, 28 January 2009.
+</li>
+<li data-index="140" data-listing-date-sort="1231765200000">
+<a href="https://web.archive.org/web/20170111162412/http://www.institutional-economics.com/index.php/section/comments/thrift_is_no_paradox/">‘Keynes was Wrong About the Paradox of Thrift’</a>, <em>The Australian Financial Review</em>, p.&nbsp;47, 13 January 2009.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2008">
+2008
+</h3>
+<ul class="pub-list">
+<li data-index="141" data-listing-date-sort="1228827600000">
+<a href="https://www.cis.org.au/commentary/opinion/flinging-wads-of-dosh-about-wont-work/">‘Flinging Wods of Dosh About Won’t Work’</a>, <em>The Age</em>, 10 December 2008.
+</li>
+<li data-index="142" data-listing-date-sort="1226408400000">
+<a href="https://www.cis.org.au/commentary/opinion/bubble-toil-and-trouble/">‘Bubble, toil and trouble’</a>, <em>The Australian</em>, 12 November 2008.
+</li>
+<li data-index="143" data-listing-date-sort="1226322000000">
+<a href="https://www.smh.com.au/national/car-subsidies-blow-good-money-out-the-exhaust-20081111-gdt2b3.html">‘Car subsidies blow good money out the exhaust’</a>, <em>The Sydney Morning Herald</em>, 11 November 2008.
+</li>
+<li data-index="144" data-listing-date-sort="1225198800000">
+<a href="https://www.cis.org.au/commentary/opinion/beware-political-saviours/">‘Beware Political Saviours’</a>, <em>The Australian</em>, 29 October 2008.
+</li>
+<li data-index="145" data-listing-date-sort="1223989200000">
+<a href="files/articles/WSJ_op-ed_15_October_2008.pdf">‘The Wrong Plan for Australia’</a>, <em>The Wall Street Journal</em>, p.&nbsp;19, 15 October 2008.
+</li>
+<li data-index="146" data-listing-date-sort="1222696800000">
+‘$4 billion is no real help’, <em>The Age</em>, 30 September 2008.
+</li>
+<li data-index="147" data-listing-date-sort="1218463200000">
+<a href="https://web.archive.org/web/20081019090357/http://business.theage.com.au:80/business/dont-count-ratecut-chickens-before-they-hatch--inflation-is-still-simmering-20080811-3to5.html?page=1">‘Don’t count rate-cut chickens before they hatch - inflation is still simmering’</a>, <em>The Age</em>, 12 August 2008.
+</li>
+<li data-index="148" data-listing-date-sort="1206536400000">
+<a href="https://www.theage.com.au/business/independence-2-accountability-0-20080326-21qy.html">‘Independence: 2, accountability: 0’</a>, <em>The Age</em>, 27 March 2008.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2007">
+2007
+</h3>
+<ul class="pub-list">
+<li data-index="149" data-listing-date-sort="1191852000000">
+<a href="https://web.archive.org/web/20071130152842/http://www.cis.org.au:80/executive_highlights/EH2007/ehkirchner.html">‘Tax Cuts Don’t Cause Higher Interest Rates’</a>, <em>The Australian Financial Review</em>, 9 October 2007.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2006">
+2006
+</h3>
+<ul class="pub-list">
+<li data-index="150" data-listing-date-sort="1137330000000">
+<a href="files/articles/Will_Japan_Target_Inflation_in_2006_.pdf">‘Will Japan Target Inflation in 2006?’</a>, <em>Business Week</em>, 16 January 2006.
+</li>
+</ul>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="opeds-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
