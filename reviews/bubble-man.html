@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Stephen Kirchner">
+<meta name="dcterms.date" content="2005-10-17">
 
-<title>Blog – Stephen Kirchner</title>
+<title>Bubble Man – Stephen Kirchner</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,29 +31,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,68 +79,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Stephen Kirchner" href="blog.xml" data-external="1"></head>
+<link rel="stylesheet" href="../styles.css">
+</head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -311,7 +253,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Stephen Kirchner</span>
     </a>
   </div>
@@ -322,19 +264,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./articles.html"> 
+    <a class="nav-link" href="../articles.html"> 
 <span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./monographs.html"> 
+    <a class="nav-link" href="../monographs.html"> 
 <span class="menu-text">Monographs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reviews.html"> 
+    <a class="nav-link" href="../reviews.html"> 
 <span class="menu-text">Reviews</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -349,7 +291,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Blog</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Bubble Man</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -391,7 +333,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./blog.xml" class="sidebar-item-text sidebar-link"><i class="bi bi-rss" role="img">
+  <a href="../blog.xml" class="sidebar-item-text sidebar-link"><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text">RSS</span></a>
   </div>
@@ -401,23 +343,36 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Bubble Man</h1>
+<p class="subtitle lead">Review of <em>Bubble Man: Alan Greenspan &amp; the Missing 7 Trillion Dollars</em> by Peter Hartcher</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stephen Kirchner </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 17, 2005</p>
+    </div>
+  </div>
   
     
   </div>
@@ -427,45 +382,32 @@ window.Quarto = {
 </header>
 
 
+<p>Hartcher’s book follows his stint as a Washington correspondent, was written while a fellow at the Lowy Institute and is published by Morry Schwartz’s Black Inc.&nbsp; Much of the book is a recycling of earlier books on the Greenspan Fed by Steve Beckner, Justin Martin and Bob Woodward, Robert Shiller’s Irrational Exuberance and other sources.&nbsp; There are no footnotes or bibliography and only a few references in the main text.</p>
+<p>As its title suggests, the book seeks to lay blame for the turn of the century boom and bust in US equities and subsequent recession at the feet of Federal Reserve Chairman Alan Greenspan.&nbsp; Hartcher is not alone in making this argument and it is one that crosses party lines.&nbsp; Economists at the otherwise respectable American Enterprise Institute have made similar claims.&nbsp; Few have made it quite as forcefully as Hartcher, who mostly substitutes hyperbole for analysis, trying to carry the argument by sheer force of exaggeration: ‘Alan Greenspan was not prepared to contain or manage in any way one of the most deluded and dangerous market manias in four centuries of financial capitalism’ (p.&nbsp;175).&nbsp; Hartcher maintains that from 1996, Greenspan understood the risks associated with the stock market boom, but out of political timidity, did ‘absolutely nothing about it’ (p.&nbsp;xv).</p>
+<p>The main evidence offered for Hartcher’s claim that monetary policy from 1996 onwards was excessively accommodative of rising stock prices is that ‘Greenspan’s Fed made a net change to official interest rates of -1.25 percentage points during the bubble years’ (p.&nbsp;132).&nbsp; Both inflation and nominal interest rates have been in secular decline throughout the industrialised world since the early 1980s, so any sum of changes in nominal interest rates is likely to pick-up this downtrend.&nbsp; The Fed was hardly alone in this.&nbsp; The figure for the Reserve Bank of Australia over the same period referenced by Hartcher was -2.75 percentage points.&nbsp; Hartcher’s reference to a ‘21%’ fall in the Fed funds rate (p.&nbsp;147) tells us a lot about the global decline in inflation over this period, but very little about actual the stance of US monetary policy.&nbsp; What really matters is the average level of the real rate over time relative to a (not necessarily constant) equilibrium real rate.</p>
+<p>Hartcher acknowledges that the easings at the end of 1998 in response to the aftermath of the Asian crisis and the collapse of LTCM were necessary and even concedes that these episodes were ‘handled judiciously and well’ by the Fed (p.&nbsp;147), so he can really only claim three easings, summing to -0.75 percentage points, for his ‘bubble’ accommodation thesis.&nbsp; The Fed tightened aggressively from 1999 and Hartcher acknowledges the role of these tightenings in the undoing of the stock market boom and subsequent recession.&nbsp; He also claims that the Fed tightening of the mid-1990s was appropriate.&nbsp; So Hartcher’s claim boils down to the very implausible one that somewhere between the easing cycle that began in July 1995 and the concerted tightening that began in June 1999, US monetary policy was accommodative of what he calls ‘the biggest speculative mania the world has seen’ (p.&nbsp;1).&nbsp; This period was in fact punctuated by one Fed tightening, in March 1997, but Hartcher maintains this was not enough.&nbsp; Hartcher never ventures to suggest by how much the Fed should have tightened over this period.&nbsp; Instead, he quotes Fed research on the elasticity of stock prices to Fed funds rate shocks contained in a 2003 speech by then Federal Reserve Board Governor Ben Bernanke.&nbsp; In this context, Hartcher says that the idea that ‘monetary policy has a strong influence over the market…is supported by all the evidence from within the Fed itself’ (p.&nbsp;151 emphasis added).&nbsp; Hartcher neglects to mention that the rest of Bernanke’s speech is in fact a compelling review of the theory and evidence against the proposition that monetary policy should respond to asset prices, citing no less than 20 academic papers and other sources on the subject.&nbsp; In particular, Bernanke summarises his argument by noting that ‘monetary policy can lower stock values only to the extent that it weakens the broader economy, and in particular that it makes households considerably worse off.&nbsp; Indeed, according to our analysis, policy would have to weaken the general economy quite significantly to obtain a large decline in stock prices.’ Hartcher is not being honest with his readers in making such highly selective use of his sources.</p>
+<p>Hartcher maintains that the Fed Chairman acknowledged that there was, in Greenspan’s own words, ‘a stock market bubble problem’ in 1996, but failed to act against it, because of a combination of political timidity and personal fallibility.&nbsp; However, it does not follow from Greenspan’s acknowledgment of a ‘stock market bubble problem’ that monetary policy should respond to it.&nbsp; Greenspan’s famous ‘irrational exuberance’ speech to the American Enterprise Institute at the end of 1996 was deliberately couched in rhetorical terms because, as Hartcher concedes, most central bankers and economists think that targeting asset prices is an extremely risky proposition.&nbsp; This is a view shared by RBA Governor Ian Macfarlane, who has argued against targeting asset prices in terms almost identical to Alan Greenspan.</p>
+<p>The weaker the connection between asset prices and economic fundamentals, the stronger the argument against using asset prices as either targets or conditioning variables for monetary policy.&nbsp; There is only one major recent example of a central bank targeting asset prices in a systematic way: the Reserve Bank of New Zealand’s use of the exchange rate as part of a composite operating target between 1996 and 1999.&nbsp; This practice was abandoned, because the well known volatility of exchange rates and their very loose relationship with economic fundamentals made it a very poor basis for conducting monetary policy.&nbsp; This is even more true of stock prices.&nbsp; A direct and systematic response of monetary policy to asset prices would inject more volatility into financial markets and the economy and would be far more destabilising than the routine asset price inflation and deflation which for the most part has benign implications for the real economy and is necessary for the efficient allocation of capital.</p>
+<p>Hartcher is oblivious to a glaring contradiction at the heart of his argument: if central bankers are as personally and politically fallible as Hartcher suggests Greenspan was, then this a very strong argument against a discretionary monetary policy that seeks to second-guess the market on asset prices.&nbsp; Hartcher is effectively arguing that we need a central banker who is prepared to back their own judgement on asset prices against the market, but we have no basis for believing that any other individual would be less error prone or fallible than Greenspan given the institutional environment in which the Fed Chair operates.&nbsp; Hartcher acknowledges that Greenspan conducted monetary policy in a highly discretionary way, yet concludes from his supposed failings that central bankers should exercise even more discretion to target asset prices.&nbsp; Like most journalists, Hartcher is preoccupied with personalities at the expense of processes, showing no interest in institutional reforms that might make the process of setting US monetary policy less subject to discretionary policy error, such as the adoption of a formal inflation targeting regime.</p>
+<p>The idea that central banks should manage asset prices through monetary policy is antithetical to the very reason we have financial markets.&nbsp; The debate over how monetary policy should respond to ‘bubbles’ is the asset market equivalent of the socialist calculation debate of the 1930s.&nbsp; Unfortunately, the idea that monetary policy should respond to asset prices is gaining ground, in large part because of the growing tendency to view markets as being ‘bubble’ prone.&nbsp; There is not a single asset class that has not been pronounced as being in a ‘bubble’ in recent years and the term is now so overused as to be bereft of analytical content.&nbsp; If ‘bubbles’ are as common as the likes of Hartcher would have us believe, then this is strong grounds for believing that they are normal part of the functioning of markets.&nbsp; If asset prices had simple and deterministic relationships with known fundamentals, there would in fact be no need for financial markets to set prices.&nbsp; Asset price inflation and deflation is a necessary part of the market discovery process.&nbsp; The notion that the authorities can know better than the market the appropriate level or growth rate for asset prices is a seductive, but dangerous one, not least in the hands of central bankers.</p>
+<p><br>
+Hartcher’s Hyperbole: A Colourful Footnote</p>
+<p>There is a role for colourful prose in journalism, but Hartcher routinely lapses into hyperbole.&nbsp; I can’t help but share the following, which had me laughing out loud in ways I’m sure the author never intended:</p>
+<p>‘lewdley seductive slut of greed to run amok in the markets’ (p.&nbsp;xiii)</p>
+<p>‘vortex of one of the greatest speculative frenzies the world has seen…the entire ranting, thundering, churning, wrenching $17 trillion dollar frenzy that convulsed a superpower’ (p.&nbsp;14)</p>
+<p>‘Americans spent freely and threw the concept of savings [sic] into the same place they put prudence, moderation and common sense’ (p.&nbsp;26)</p>
+<p>‘the current account deficit…swiftly deteriorated to a new low of impoverishment’ (p.&nbsp;27)</p>
+<p>‘the Great American Bubble’ (p.&nbsp;31)</p>
+<p>‘Wall Street firms…synonymous with greed and exploitation and often reviled’ (p.&nbsp;41)</p>
+<p>‘Great American madness’ (p.&nbsp;50 and p.&nbsp;182)</p>
+<p>‘what he [Greenspan] does is vital yet so stunningly simple: he operates the money supply, the giant on-off switch of American economic growth’ (p.&nbsp;78)</p>
+<p>‘virulent danger of an economic bacchanalia’ (p.&nbsp;84)</p>
+<p>Greenspan ‘the charismatic leader of a manic cult’ (p.&nbsp;140)</p>
+<p>‘the “rational markets” hypothesis is the economics equivalent of an apologia for [German cannibal] Armen Meiwes’ (p.&nbsp;189)</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1790776800000" data-listing-file-modified-sort="1790833508614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">Welcome</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<p>First post on the new site.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 1, 2026
-</div>
-<div class="listing-author">
-Stephen Kirchner
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Stephen Kirchner">
+<meta name="dcterms.date" content="2008-08-29">
 
-<title>Blog – Stephen Kirchner</title>
+<title>The Age of Turbulence – Stephen Kirchner</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,29 +31,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,68 +79,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Stephen Kirchner" href="blog.xml" data-external="1"></head>
+<link rel="stylesheet" href="../styles.css">
+</head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -311,7 +253,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Stephen Kirchner</span>
     </a>
   </div>
@@ -322,19 +264,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./articles.html"> 
+    <a class="nav-link" href="../articles.html"> 
 <span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./monographs.html"> 
+    <a class="nav-link" href="../monographs.html"> 
 <span class="menu-text">Monographs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reviews.html"> 
+    <a class="nav-link" href="../reviews.html"> 
 <span class="menu-text">Reviews</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -349,7 +291,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Blog</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">The Age of Turbulence</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -391,7 +333,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./blog.xml" class="sidebar-item-text sidebar-link"><i class="bi bi-rss" role="img">
+  <a href="../blog.xml" class="sidebar-item-text sidebar-link"><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text">RSS</span></a>
   </div>
@@ -401,23 +343,36 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">The Age of Turbulence</h1>
+<p class="subtitle lead">Review of <em>The Age of Turbulence</em> by Alan Greenspan</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stephen Kirchner </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 29, 2008</p>
+    </div>
+  </div>
   
     
   </div>
@@ -427,45 +382,17 @@ window.Quarto = {
 </header>
 
 
+<p>Alan Greenspan’s memoir was released the day before his successor as Federal Reserve Chairman presided over a reduction in US interest rates of 0.50 percentage points, the first easing in US monetary policy since 2003.&nbsp; Many have argued that the current economic problems in the US are attributable to Greenspan’s legacy as Fed Chairman.&nbsp; Greenspan defends the policy actions of the Federal Open Market Committee (FOMC) during his tenure, but does not fully engage with his critics.&nbsp; This is unfortunate, because Greenspan’s book could have served as a much needed corrective to those who argue that monetary policy is the principal driver of the business cycle and asset price dynamics.&nbsp; This view has almost no empirical support, but has popular appeal as a simple, mono-causal explanation for economic developments that are not otherwise well understood.&nbsp; Under Greenspan and his predecessor, Paul Volcker, US monetary policy focused more successfully on anchoring the long-run price level of the US economy than had been the case in earlier decades.&nbsp; Greenspan and the other members of the FOMC did not and could not aim to eliminate the business cycle or asset price inflations and deflations, which are a normal part of the functioning of the economy and financial markets.&nbsp; Those who argue otherwise are effectively calling for a kind of central planning via monetary policy that is likely to be far more destabilising than the current focus on long-run inflation control.</p>
+<p>The early autobiographical material at the beginning of the book contains little that has not been covered in previous biographies, in particular, Justin Martin’s Greenspan.&nbsp; We learn of his somewhat unconventional dating techniques, including inviting Andrea Mitchell back to his apartment on the pretext of showing her an ‘essay I’d written on antitrust for Ayn Rand’ (p.&nbsp;97).&nbsp; Greenspan certainly does not downplay the influence of Rand, saying that ‘Ayn Rand became a stabilizing force in my life’ (p.&nbsp;51), quite possibly the only person for whom this was true (Barbara Branden’s biography, The Passion of Ayn Rand, also noted that Greenspan was one of the few among Rand’s inner circle who came through the experience unscathed).&nbsp; Greenspan was among the handful of Rand’s acolytes who aspired to, and subsequently achieved, a role in the public policy mainstream: ‘by the time I joined Richard Nixon’s campaign for the Presidency in 1968, I had long since decided to engage in efforts to advance free-market capitalism as an insider, rather than as a critical pamphleteer’ (p.&nbsp;52).&nbsp; Much of the value in Greenspan’s memoir comes from his perspective as a ‘lifelong libertarian Republican’ (p.&nbsp;208), who progressed to the upper echelons of US economic policymaking.</p>
+<p>One the issues confronting US policymakers in the late 1990s and early 2000s was what to do with a growing federal budget surplus and the prospect of paying down outstanding federal government debt.&nbsp; Greenspan quotes Republican Congressman Bill Archer, who characterised the problem in ironic terms that would be all too familiar to Australian readers: ‘because of record-high taxation, the surplus is raging out of control’ (p.&nbsp;185).&nbsp; Greenspan found himself ‘picturing American government officials becoming the world’s largest investors’ and coming to ‘a stark realization: chronic surpluses could be almost as destabilizing as chronic deficits’ (p.&nbsp;218).&nbsp; The recession of 2001 meant that the US no longer faces this peculiar problem, but Greenspan’s disquiet is still highly relevant in the Australian context.&nbsp; While much has been made of Greenspan’s supposed criticisms of the Bush Administration, Greenspan’s harshest criticism is that Bush did not exercise his veto powers more aggressively to stop Congressional fiscal excesses.</p>
+<p>Greenspan says that ‘Australia has always fascinated me as a microcosm of the United States’ and that he looked to Australia ‘as a leading indicator of many aspects of US economic performance’ (p.&nbsp;292).&nbsp; He took particular comfort from Australia’s ability to run persistently large current account deficits, noting that these had ‘no significant macroeconomic impact’ (p.&nbsp;292).&nbsp; Elsewhere in the book, he notes that ‘I do not recall a decade free of surges in angst about the mounting debt of households and business.’ As Greenspan argues, ‘rising debt goes hand in hand with progress…debt will almost always rise relative to incomes so long as we have an ever-increasing division of labour and specialization of tasks, increasing productivity and a consequent rise in both assets and liabilities as a percentage of income.&nbsp; Thus, a rising ratio of debt to income for households…is not in itself a measure of stress’ (pp.&nbsp;346-7).&nbsp; Greenspan argues that current account imbalances are here to stay and are a natural consequence of increased specialisation and division of labour spilling across borders due to globalisation.</p>
+<p>Greenspan also effectively debunks some of the myths surrounding the role of official reserve assets and related transactions in asset price determination, myths that still have a substantial hold on the thinking of even sophisticated investors in wholesale financial markets.&nbsp; He notes that because of depth and liquidity of US dollar-denominated asset markets, ‘large accumulations or liquidations of US Treasuries can be made with only modest effects on interest rates.&nbsp; The same holds true for exchange rates’ (p.&nbsp;349).&nbsp; Greenspan cites the most obvious example of the irrelevance of official reserve asset transactions when notes that ‘Japanese monetary authorities, after having accumulated nearly $40 billion a month of foreign exchange, predominantly in US Treasuries, between the summer of 2003 and early 2004, abruptly ended that practice in March 2004.&nbsp; Yet it is difficult to find significant traces of that abrupt change in either the prices of the US Treasury ten-year note or the dollar-yen exchange rate.&nbsp; Earlier, Japanese authorities purchased $20 billion of US Treasuries in one day, with little result’ (pp.&nbsp;487-8).&nbsp; Despite evidence such as this, there are still many fund managers who premise their investment strategies on second-guessing government actions in relation to official reserve assets.</p>
+<p>Looking out to 2030, Greenspan foresees an end to the current glut of global saving and the disinflationary impulse from the globalisation of the labour force, as developing economies like China mature.&nbsp; He doubts US policymakers will have the resolve to address the fiscal challenges associated with an aging population or to resist future inflationary pressures, predicting a 4.5% inflation rate and an 8% yield on US 10-year Treasuries, with real interest rates rising by around one percentage point (p.&nbsp;484).&nbsp; While this scenario is necessarily speculative, it is one that follows logically enough from his analysis of recent global economic conditions.</p>
+<p>Greenspan’s book will likely disappoint those looking for a more robust and detailed engagement with his many critics on the finer points of the conduct of monetary policy.&nbsp; The book’s main value lies in bringing a free-market perspective on global economic developments and public policy issues before a wider audience.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1790776800000" data-listing-file-modified-sort="1790833508614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">Welcome</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<p>First post on the new site.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 1, 2026
-</div>
-<div class="listing-author">
-Stephen Kirchner
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

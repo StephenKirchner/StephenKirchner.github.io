@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Stephen Kirchner">
+<meta name="dcterms.date" content="2005-09-12">
 
-<title>Blog – Stephen Kirchner</title>
+<title>The Rise and Fall of Monetary Targeting in Australia – Stephen Kirchner</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,29 +31,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,68 +79,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Stephen Kirchner" href="blog.xml" data-external="1"></head>
+<link rel="stylesheet" href="../styles.css">
+</head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -311,7 +253,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Stephen Kirchner</span>
     </a>
   </div>
@@ -322,19 +264,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./articles.html"> 
+    <a class="nav-link" href="../articles.html"> 
 <span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./monographs.html"> 
+    <a class="nav-link" href="../monographs.html"> 
 <span class="menu-text">Monographs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reviews.html"> 
+    <a class="nav-link" href="../reviews.html"> 
 <span class="menu-text">Reviews</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -349,7 +291,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Blog</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">The Rise and Fall of Monetary Targeting in Australia</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -391,7 +333,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./blog.xml" class="sidebar-item-text sidebar-link"><i class="bi bi-rss" role="img">
+  <a href="../blog.xml" class="sidebar-item-text sidebar-link"><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text">RSS</span></a>
   </div>
@@ -401,23 +343,36 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">The Rise and Fall of Monetary Targeting in Australia</h1>
+<p class="subtitle lead">Review of <em>The Rise and Fall of Monetary Targeting in Australia</em> by Simon Guttmann</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stephen Kirchner </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 12, 2005</p>
+    </div>
+  </div>
   
     
   </div>
@@ -427,45 +382,19 @@ window.Quarto = {
 </header>
 
 
+<p><em>The Rise and Fall of Monetary Targeting in Australia</em> is a detailed examination of an important episode of macroeconomic policymaking.&nbsp; Based on the author’s PhD thesis, the book brings together an impressive range of primary and secondary source material.&nbsp; Guttmann was given unfettered access to the archives of the Reserve Bank through to 1986, although Treasury refused a similar request.&nbsp; Guttmann also interviewed many current and former policymakers.</p>
+<p>Guttmann sets out to examine why monetary targeting ‘gained favour in Australia during the 1970s, how it was used to support a number of economic policies and why it lost appeal in the mid 1980s’ (p.&nbsp;vii).&nbsp; Guttmann concludes that ‘while the government, the Treasury and the Reserve Bank did, on occasion, provide a considered discussion of monetary targeting, unfounded assertion, dissembling and obfuscation were the rule.&nbsp; Misguided policies and unfavourable economic performance were arguably the result’ (p.&nbsp;250).&nbsp; Similar conclusions could be reached about many other historical episodes of macroeconomic policymaking.&nbsp; The importance of the monetary targeting episode lies in what it tells us about Australia’s economic policymaking institutions.&nbsp;</p>
+<p>The picture painted by Guttman in this regard is not a pretty one, with key policymakers and policymaking institutions shown to have been driven overwhelmingly by expediency, political and bureaucratic self-interest at the expense of good policymaking.&nbsp; Neither Treasury nor the RBA covered themselves with glory throughout this period, being concerned mainly with promoting their own bureaucratic prerogatives, while seeking to avoid being held accountable for macroeconomic outcomes.&nbsp; The role of Treasury and RBA before the Campbell Committee puts paid to the notion that these institutions were at the forefront of the push for financial deregulation.&nbsp; The Treasury’s submission showed that it barely understood what it meant to have a market-determined exchange rate, arguing against floating the dollar on the grounds that ‘the degree of intervention required in the foreign exchange market to achieve a desired exchange rate would be larger with a market-determined rate’ (p.&nbsp;139).&nbsp;</p>
+<p>The problems with the RBA’s conflicted statutory mandate are readily apparent throughout the book.&nbsp; In an amazingly frank admission before the Campbell Committee, the RBA argued in relation to its own statute:</p>
+<p><em>it has become all too clear that the hoped-for compatibility of objectives, and even their meaning, are the very stuff of politics.&nbsp; The Reserve Bank must pick its way as best it can…its range of choice depends upon the powers and actions of others, as much as upon its own.&nbsp; The objectives are achievable in their entirety only in the long run (if at all).</em> (cited on p.&nbsp;133)</p>
+<p>It is hard to imagine a more telling indictment of the statutory framework that stills governs Australian monetary policy.&nbsp; The RBA opposed monetary targeting, not least because ‘the accountability that a projection imposed on the authorities was incompatible with the Reserve’s reluctance to provide information about monetary policy’ (p.&nbsp;241).&nbsp; These problems were not confined to the monetary targeting episode.&nbsp; In the wake of the abandonment of monetary targeting, Guttmann notes that ‘it quickly became apparent that a strategy for structuring monetary policy, and also communicating with markets, was absent’ (p.&nbsp;234).&nbsp; The check-list approach to monetary policy adopted from May 1985 proved equally unsatisfactory and arguably still lives on in the everything-but-the-kitchen-sink inventories the RBA now offers by way of explanation for its policy actions.</p>
+<p>While Guttmann’s book is very revealing about the failings of Australia’s macroeconomic policymaking institutions, unfortunately, this is not his major focus.&nbsp; Instead, Guttmann is overly preoccupied with criticising monetary targeting as such.&nbsp; Many of these criticisms would today meet with very little resistance from the economics profession.&nbsp; He expects the pronouncements of policymakers to bear a logical and theoretical consistency that is probably rarely observed in any area of policymaking at any time, much less the deeply contested area of macroeconomic policy.&nbsp; While some of these criticisms are fair and reasonable, they are significantly less interesting than what the monetary targeting episode reveals about the institutional framework for macroeconomic policy in Australia.&nbsp;</p>
+<p>Reading Guttmann’s book, one could be forgiven for thinking that monetary targeting and monetarism were an historical aberration, rather than a necessary stage in the evolution of contemporary monetary policy practice.&nbsp; While monetary targeting was ultimately abandoned in favour of the eventual adoption of interest rate and inflation targeting, the core monetarist insights that drove the experiment with monetary targeting in Australia, the US and elsewhere were absorbed into mainstream monetary theory and practice.&nbsp; Former Federal Reserve Board Governor Ben Bernanke recently noted that ‘[Milton] Friedman’s monetary framework has been so influential that, in its broad outlines at least, it has nearly become identical with modern monetary theory and practice.’&nbsp; The rise of a monetary view of inflation was critical in discrediting the price and income control policies that were competing for policymakers’ attention in the developed economies during the 1970s, when non-monetary views of inflation held sway, leading to the Great Inflation of that decade.&nbsp; Monetary targeting was primarily a response to the failure of existing policies.&nbsp; The long term success of the monetary view of inflation is reflected in contemporary macroeconomic outcomes.</p>
+<p>Guttmann concludes that ‘as with the monetary target, - ideology - in the form of the inflation target and prevailing fashion of central bank independence - is also crucial to understanding the financial markets’ support for the present approach to monetary policy’ (p.&nbsp;249).&nbsp; Guttmann’s evidence makes clear that expediency and pragmatism rather than ideology were the main drivers of the monetary targeting episode and this is also true of inflation targeting and central bank independence today.&nbsp; The significant improvement in macroeconomic outcomes in recent years relative to the period examined by Guttmann owes an enormous debt to the post-war revival of monetarist thought, a debt that goes unacknowledged in this book.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1790776800000" data-listing-file-modified-sort="1790833508614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">Welcome</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<p>First post on the new site.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 1, 2026
-</div>
-<div class="listing-author">
-Stephen Kirchner
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

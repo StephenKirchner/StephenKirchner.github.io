@@ -1,23 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stephenkirchner.github.io/posts/2026-10-01-welcome/index.html</loc>
-    <lastmod>2026-10-01T05:45:08.614Z</lastmod>
+    <loc>https://stephenkirchner.github.io/reviews.html</loc>
+    <lastmod>2026-10-01T09:11:27.244Z</lastmod>
   </url>
   <url>
-    <loc>https://stephenkirchner.github.io/index.html</loc>
-    <lastmod>2026-10-01T06:05:54.388Z</lastmod>
+    <loc>https://stephenkirchner.github.io/reviews/myth-of-the-rational-market.html</loc>
+    <lastmod>2026-10-01T09:10:47.604Z</lastmod>
   </url>
   <url>
-    <loc>https://stephenkirchner.github.io/articles.html</loc>
-    <lastmod>2026-10-01T08:39:50.015Z</lastmod>
+    <loc>https://stephenkirchner.github.io/reviews/flying-on-one-engine.html</loc>
+    <lastmod>2026-10-01T09:10:48.171Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stephenkirchner.github.io/reviews/age-of-turbulence.html</loc>
+    <lastmod>2026-10-01T09:10:47.906Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stephenkirchner.github.io/monographs.html</loc>
+    <lastmod>2026-10-01T08:39:50.047Z</lastmod>
   </url>
   <url>
     <loc>https://stephenkirchner.github.io/blog.html</loc>
     <lastmod>2026-10-01T05:45:08.610Z</lastmod>
   </url>
   <url>
-    <loc>https://stephenkirchner.github.io/monographs.html</loc>
-    <lastmod>2026-10-01T08:39:50.047Z</lastmod>
+    <loc>https://stephenkirchner.github.io/articles.html</loc>
+    <lastmod>2026-10-01T08:39:50.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stephenkirchner.github.io/index.html</loc>
+    <lastmod>2026-10-01T06:05:54.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stephenkirchner.github.io/posts/2026-10-01-welcome/index.html</loc>
+    <lastmod>2026-10-01T05:45:08.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stephenkirchner.github.io/reviews/bubble-man.html</loc>
+    <lastmod>2026-10-01T09:10:48.765Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stephenkirchner.github.io/reviews/money-and-asset-prices.html</loc>
+    <lastmod>2026-10-01T09:10:48.471Z</lastmod>
+  </url>
+  <url>
+    <loc>https://stephenkirchner.github.io/reviews/rise-and-fall-of-monetary-targeting.html</loc>
+    <lastmod>2026-10-01T09:10:49.047Z</lastmod>
   </url>
 </urlset>

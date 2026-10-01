@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Stephen Kirchner</title>
+<title>Reviews – Stephen Kirchner</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -82,20 +82,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-reviews .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-outlet','listing-details','listing-date','listing-when','listing-url',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-type","listing-outlet","listing-details","listing-date","listing-when","listing-url"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-reviews'] = new List('listing-reviews', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -140,9 +140,9 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Stephen Kirchner" href="blog.xml" data-external="1"></head>
+</head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -330,11 +330,11 @@ window.Quarto = {
 <span class="menu-text">Monographs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reviews.html"> 
+    <a class="nav-link active" href="./reviews.html" aria-current="page"> 
 <span class="menu-text">Reviews</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -349,7 +349,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Blog</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Reviews</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -401,16 +401,14 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Reviews</h1>
 </div>
 
 
@@ -427,45 +425,142 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1790776800000" data-listing-file-modified-sort="1790833508614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">Welcome</a>
+<p>Book reviews and review essays.</p>
+<div id="listing-reviews" class="quarto-listing quarto-listing-container-custom">
+<p class="pub-years">
+<a href="#year-2017">2017</a> · <a href="#year-2013">2013</a> · <a href="#year-2012">2012</a> · <a href="#year-2011">2011</a> · <a href="#year-2010">2010</a> · <a href="#year-2009">2009</a> · <a href="#year-2008">2008</a> · <a href="#year-2007">2007</a> · <a href="#year-2006">2006</a> · <a href="#year-2005">2005</a> · <a href="#year-2004">2004</a> · <a href="#year-2003">2003</a> · <a href="#year-2001">2001</a> · <a href="#year-2000">2000</a>
+</p>
+<h3 class="anchored pub-year" id="year-2017">
+2017
 </h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<p>First post on the new site.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2026-10-01-welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 1, 2026
-</div>
-<div class="listing-author">
-Stephen Kirchner
-</div>
-</a>
-</div>
-</div>
-</div>
+<ul class="pub-list">
+<li data-index="0" data-listing-date-sort="1488286800000">
+Review of <a href="files/reviews/33-1-kirchner-stephen.pdf"><em>The Man Who Knew: The Life and Times of Alan Greenspan</em> by Sebastian Mallaby</a>, <em>Policy</em>, 33(1), Autumn 2017.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2013">
+2013
+</h3>
+<ul class="pub-list">
+<li data-index="1" data-listing-date-sort="1368021600000">
+Review of <a href="files/reviews/kelly.pdf"><em>The Modest Member: The Life and Times of Bert Kelly</em></a>, May 2013.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2012">
+2012
+</h3>
+<ul class="pub-list">
+<li data-index="2" data-listing-date-sort="1353416400000">
+Review of <a href="files/reviews/urenreview.pdf"><em>The Kingdom and the Quarry</em> by David Uren</a>, November 2012.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2011">
+2011
+</h3>
+<ul class="pub-list">
+<li data-index="3" data-listing-date-sort="1305554400000">
+Review of <a href="https://theconversation.com/freddie-mac-and-fannie-mae-guaranteed-to-fail-1307"><em>Guaranteed to Fail: Fannie Mae, Freddie Mac and the Debacle of Mortgage Finance</em> by Viral V. Acharya, Matthew Richardson, Stijn Van Nieuwerburgh and Lawrence J. White</a>, <em>The Conversation</em>, 17 May 2011.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2010">
+2010
+</h3>
+<ul class="pub-list">
+<li data-index="4" data-listing-date-sort="1271772000000">
+Review of <a href="reviews/myth-of-the-rational-market.html"><em>The Myth of the Rational Market</em> by Justin Fox</a>, 21 April 2010.
+</li>
+<li data-index="5" data-listing-date-sort="1267362000000">
+Review of <a href="files/reviews/randreview.pdf"><em>Ayn Rand and the World She Made</em> by Anne Heller and <em>Goddess of the Market: Ayn Rand and the American Right</em> by Jennifer Burns</a>, <em>Policy</em>, 26(1), Autumn 2010.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2009">
+2009
+</h3>
+<ul class="pub-list">
+<li data-index="6" data-listing-date-sort="1251727200000">
+Review of <a href="files/reviews/ackerlofshillerreview.pdf">‘Authoritarian Economics’: <em>The Subprime Solution</em> by Robert Shiller and <em>Animal Spirits: How Human Psychology Drives the Economy and Why It Matters for Global Capitalism</em> by George Akerlof and Robert Shiller</a>, <em>Policy</em>, 25(3), Spring 2009.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2008">
+2008
+</h3>
+<ul class="pub-list">
+<li data-index="7" data-listing-date-sort="1219932000000">
+Review of <a href="reviews/age-of-turbulence.html"><em>The Age of Turbulence</em> by Alan Greenspan</a>, 29 August 2008.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2007">
+2007
+</h3>
+<ul class="pub-list">
+<li data-index="8" data-listing-date-sort="1180620000000">
+Review of <a href="files/reviews/TwoViewsEconExpansionPolicyWinter2007.pdf">‘Two Views on the Economic Expansion’: <em>Quiet Boom</em> and <em>The Search for Stability</em></a>, <em>Policy</em>, 23(2), Winter 2007.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2006">
+2006
+</h3>
+<ul class="pub-list">
+<li data-index="9" data-listing-date-sort="1138366800000">
+Review of <a href="reviews/flying-on-one-engine.html"><em>Flying on One Engine: The Bloomberg Book of Master Market Economists</em>, edited by Thomas Keene</a>, 28 January 2006.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2005">
+2005
+</h3>
+<ul class="pub-list">
+<li data-index="10" data-listing-date-sort="1134392400000">
+Review of <a href="reviews/money-and-asset-prices.html"><em>Money and Asset Prices in Boom and Bust</em> by Tim Congdon</a>, 13 December 2005.
+</li>
+<li data-index="11" data-listing-date-sort="1129471200000">
+Review of <a href="reviews/bubble-man.html"><em>Bubble Man: Alan Greenspan &amp; the Missing 7 Trillion Dollars</em> by Peter Hartcher</a>, 17 October 2005.
+</li>
+<li data-index="12" data-listing-date-sort="1126447200000">
+Review of <a href="reviews/rise-and-fall-of-monetary-targeting.html"><em>The Rise and Fall of Monetary Targeting in Australia</em> by Simon Guttmann</a>, 12 September 2005.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2004">
+2004
+</h3>
+<ul class="pub-list">
+<li data-index="13" data-listing-date-sort="1093960800000">
+Review of <a href="files/reviews/moneymandarins.pdf">‘The Mandarins of Martin Place’: <em>Australia’s Money Mandarins: The Reserve Bank and the Politics of Money</em> by Stephen Bell</a>, <em>Policy</em>, 20(3), Spring 2004.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2003">
+2003
+</h3>
+<ul class="pub-list">
+<li data-index="14" data-listing-date-sort="1046437200000">
+Review of <a href="https://web.archive.org/web/20140213214616/http://www.cis.org.au:80/publications/policy-magazine/article/2098-book-review-the-ordinary-business-of-life"><em>The Ordinary Business of Life: A History of Economics</em> by Roger Backhouse</a>, <em>Policy</em>, Autumn 2003.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2001">
+2001
+</h3>
+<ul class="pub-list">
+<li data-index="15" data-listing-date-sort="1007125200000">
+Review of <a href="https://web.archive.org/web/20030507091908/http://www.cis.org.au:80/policy/summer01-02/PolicySummer01_9b.htm"><em>Guiding Global Order</em>, edited by John Kirton, Joseph Daniels and Andreas Freytag</a>, <em>Policy</em>, Summer 2001–02.
+</li>
+<li data-index="16" data-listing-date-sort="990626400000">
+Review of <a href="files/reviews/woodwardmartinongreenspan.pdf"><em>Greenspan: The Man Behind Money</em> by Justin Martin and <em>Maestro: Greenspan’s Fed and the American Boom</em> by Bob Woodward</a>, 2001.
+</li>
+</ul>
+<h3 class="anchored pub-year" id="year-2000">
+2000
+</h3>
+<ul class="pub-list">
+<li data-index="17" data-listing-date-sort="974811600000">
+Review of <a href="files/reviews/shillerirratexub.pdf"><em>Irrational Exuberance</em> by Robert Shiller</a>, 2000.
+</li>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

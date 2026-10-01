@@ -1,6 +1,10 @@
 [
   {
-    "listing": "/articles.html",
+    "listing": "/reviews.html",
+    "items": []
+  },
+  {
+    "listing": "/monographs.html",
     "items": []
   },
   {
@@ -10,7 +14,7 @@
     ]
   },
   {
-    "listing": "/monographs.html",
+    "listing": "/articles.html",
     "items": []
   }
 ]
