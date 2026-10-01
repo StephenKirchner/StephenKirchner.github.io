@@ -1,0 +1,40 @@
+<%
+// Custom listing template for articles.qmd (data in articles.yml).
+// With template-params: {group-by-year: true}, entries get year headings
+// and a row of year links at the top.
+// Notes: Quarto treats this output as Markdown, so each entry is built as a
+// single line of HTML. Quarto templates use lodash syntax: the "=" tag outputs raw
+// HTML and ${...} is reserved, so strings are joined with + instead.
+const groupByYear = typeof templateParams !== 'undefined' && templateParams['group-by-year'];
+const yearOf = function (item) { return String(item.date || '').slice(-4); };
+const years = [...new Set(items.map(yearOf))];
+const link = function (url, text) { return url ? '<a href="' + url + '">' + text + '</a>' : text; };
+const entry = function (item) {
+  let s = link(item.url, '‘' + item.title + '’') + ', <em>' + item.outlet + '</em>';
+  if (item.details) s += ', ' + item.details;
+  s += ', ' + (item.when || item.date) + '.';
+  if (item.note) s += ' ' + item.note;
+  if (item['also-outlet']) {
+    s += ' ' + item['also-label'];
+    if (item['also-title']) s += ' as ‘' + item['also-title'] + '’';
+    s += ' in ' + link(item['also-url'], '<em>' + item['also-outlet'] + '</em>') + ', ' + item['also-when'] + '.';
+  }
+  if (item.pdf) s += ' <a href="' + item.pdf + '">[PDF]</a>';
+  return s;
+};
+let lastYear = null;
+%>
+<% if (groupByYear && years.length > 1) { %>
+<p class="pub-years"><%= years.map(function (y) { return '<a href="#year-' + y + '">' + y + '</a>'; }).join(' · ') %></p>
+<% } %>
+<% for (const item of items) {
+const year = yearOf(item);
+if (groupByYear && year !== lastYear) {
+if (lastYear !== null) { %></ul>
+<% } lastYear = year; %>
+<h3 class="anchored pub-year" id="year-<%= year %>"><%= year %></h3>
+<ul class="pub-list">
+<% } else if (lastYear === null) { lastYear = ''; %><ul class="pub-list">
+<% } %><li <%= metadataAttrs(item) %>><%= entry(item) %></li>
+<% } %>
+<% if (lastYear !== null) { %></ul><% } %>

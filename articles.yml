@@ -1,5 +1,1081 @@
-# One entry per article. 'path' can be a DOI/URL or a local file, e.g. files/paper.pdf
-- title: "Example article title"
-  date: 2024-05-01
-  description: "Journal name, vol(issue)"
-  path: https://doi.org/10.0000/example
+# Articles listed on articles.qmd, sorted automatically by date (newest first).
+# To add one, copy an entry. Fields:
+#   title, outlet, date (YYYY-MM-DD) and type (op-ed or journal) are required.
+#   url      link to the article (or a PDF in files/articles/)
+#   pdf      optional extra [PDF] link, e.g. a local copy of a journal article
+#   details  e.g. volume/issue or page numbers, shown after the outlet
+#   when     replaces the displayed date, e.g. "Summer 2015–16"
+#   note     short text shown at the end, e.g. "With Oliver Hartwich."
+#   also-*   a second publication of the same piece (see examples below)
+
+- title: "Sanctions are the least bad option against Putin’s aggression"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2022-02-28
+  url: "https://www.afr.com/world/europe/sanctions-are-the-least-bad-option-against-putin-s-aggression-20220228-p5a0df"
+
+- title: "Xi’s rightly wary of Fed tightening"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2022-01-19
+  url: "https://www.afr.com/policy/economy/xi-s-rightly-wary-of-fed-tightening-20220117-p59oya"
+
+- title: "Australian capital and talent is leaving home"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2021-12-22
+  url: "https://www.afr.com/policy/economy/australian-capital-and-talent-is-leaving-home-20211221-p59j84"
+
+- title: "The Reserve Bank of Australia’s pandemic response and the New Keynesian trap"
+  type: "journal"
+  outlet: "Agenda"
+  details: "28(1), pp. 105–116"
+  date: 2021-12-10
+  when: "2021"
+  url: "https://doi.org/10.22459/AG.28.01.2021.06"
+  pdf: "https://press-files.anu.edu.au/downloads/press/n9504/pdf/06_kirchner.pdf"
+
+- title: "China’s WTO Accession and US Economic Engagement 20 Years On"
+  type: "op-ed"
+  outlet: "Australian Outlook"
+  date: 2021-12-09
+  url: "https://www.internationalaffairs.org.au/australianoutlook/china-wto-accession-us-economic-engagement-20-years/"
+
+- title: "Omicron is the least of the problems for global trade"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2021-11-30
+  url: "https://www.afr.com/policy/economy/omicron-is-the-least-of-the-problems-for-global-trade-20211129-p59d6k"
+
+- title: "A geoeconomic alliance"
+  type: "op-ed"
+  outlet: "Australian Outlook"
+  date: 2021-10-14
+  url: "https://www.internationalaffairs.org.au/australianoutlook/a-geoeconomic-alliance/"
+
+- title: "Countering China’s trade coercion should be alliance agenda"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2021-09-21
+  url: "https://www.afr.com/policy/foreign-affairs/countering-china-s-trade-coercion-should-be-alliance-agenda-20210920-p58tab"
+
+- title: "The Australia-US Bilateral Investment Relationship in 2020: Taxing Times"
+  type: "op-ed"
+  outlet: "Australian Outlook"
+  date: 2021-07-06
+  url: "https://www.internationalaffairs.org.au/australianoutlook/the-australia-us-bilateral-investment-relationship-in-2020-taxing-times/"
+
+- title: "US investors cool on Australia"
+  type: "op-ed"
+  outlet: "The Mandarin"
+  date: 2021-07-06
+  url: "https://www.themandarin.com.au/162068-us-investors-cool-on-australia/"
+
+- title: "G7 tax deal a threat to refomers"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2021-06-07
+  url: "https://www.afr.com/policy/economy/g7-tax-deal-is-a-threat-to-reformers-20210606-p57yla"
+
+- title: "Higher corporate taxes make paying for Biden’s spending harder"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2021-05-04
+  url: "https://www.afr.com/politics/higher-corporate-taxes-make-paying-for-biden-s-spending-harder-20210503-p57ok3"
+
+- title: "National security looms large for foreign investment"
+  type: "op-ed"
+  outlet: "The Mandarin"
+  date: 2021-04-20
+  url: "https://www.themandarin.com.au/154385-national-security-looms-large-for-foreign-investment/"
+
+- title: "Australia must avoid America’s demographic stagnation"
+  type: "op-ed"
+  outlet: "The Mandarin"
+  date: 2020-11-23
+  url: "https://www.themandarin.com.au/145617-australia-must-avoid-americas-demographic-stagnation/"
+
+- title: "The US has turned its back on skilled migrants, giving Australia an opening"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2020-11-16
+  url: "https://theconversation.com/the-us-turns-its-back-on-skilled-migrants-giving-australia-an-opening-150088"
+
+- title: "How the activist Fed will pile more pressure on the RBA"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2020-08-31
+  url: "https://www.afr.com/policy/economy/the-new-activist-fed-will-pile-more-pressure-on-to-the-rba-20200827-p55q16"
+
+- title: "China’s behaviour warrants increased scrutiny of foreign investment"
+  type: "op-ed"
+  outlet: "The Mandarin"
+  date: 2020-07-09
+  url: "https://www.themandarin.com.au/135984-opinion-chinas-behaviour-warrants-increased-scrutiny-of-foreign-investment/"
+
+- title: "The US is central to this China trade quarrel"
+  type: "op-ed"
+  outlet: "The Canberra Times"
+  date: 2020-05-25
+  url: "https://www.canberratimes.com.au/story/6767151/the-us-is-central-to-this-china-trade-quarrel/?cspt=1590361370|01feb6136fadad51133c884d4935b6b6"
+
+- title: "Birmingham on thin ice challenging China to take Australia to the WTO"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2020-05-14
+  url: "https://www.afr.com/policy/foreign-affairs/birmingham-on-thin-ice-challenging-china-to-take-australia-to-the-wto-20200514-p54sso"
+
+- title: "What COVID-19 means for Australian productivity"
+  type: "op-ed"
+  outlet: "CEDA Blog"
+  date: 2020-04-22
+  url: "https://www.ceda.com.au/news-and-resources/opinion/economy/what-covid-19-means-for-australian-productivity"
+
+- title: "Coronavirus means globalisation has suffered but we must not give up on trade links"
+  type: "op-ed"
+  outlet: "ABC Online"
+  date: 2020-04-17
+  url: "https://www.abc.net.au/news/2020-04-17/coronavirus-globalisation-setback-maintain-trade-links/12146876"
+
+- title: "RBA should have followed Fed’s lead"
+  type: "op-ed"
+  outlet: "The 45th"
+  date: 2020-03-25
+  url: "https://www.ussc.edu.au/rba-should-have-followed-feds-lead"
+
+- title: "It’d be a mistake to shut financial markets: more than ever, we need them to work"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2020-03-23
+  url: "https://theconversation.com/itd-be-a-mistake-to-shut-financial-markets-more-than-ever-we-need-them-to-work-134387"
+
+- title: "The Effect of Changes in Monetary Policy on Consumer and Business Confidence"
+  type: "journal"
+  outlet: "The Australian Economic Review"
+  details: "53(1), pp. 118–125"
+  date: 2020-03-01
+  when: "March 2020"
+  url: "https://doi.org/10.1111/1467-8462.12365"
+
+- title: "RBA’s foot-dragging leaves economy dangerously exposed"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2020-02-05
+  url: "https://www.afr.com/policy/economy/rba-s-foot-dragging-leaves-economy-dangerously-exposed-20200204-p53xgw"
+
+- title: "The evidence suggests Reserve Bank rate cuts don’t hurt confidence"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2020-02-04
+  url: "https://theconversation.com/the-evidence-suggests-reserve-bank-rate-cuts-dont-hurt-confidence-130799"
+
+- title: "US-China trade deal is spin for Trump’s failed protectionism"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2020-01-23
+  url: "https://www.afr.com/world/north-america/us-china-trade-deal-is-spin-for-trump-s-failed-protectionism-20200122-p53tlo"
+
+- title: "Don’t bank on US dollar demise"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2020-01-09
+  url: "https://www.afr.com/markets/currencies/don-t-bank-on-us-dollar-demise-20200108-p53pos"
+
+- title: "US protectionism a costly failure"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2019-12-16
+  url: "https://www.afr.com/policy/economy/us-protectionism-a-costly-failure-20191215-p53k2e"
+
+- title: "Now we know. The Reserve Bank has spelled out what it will do when rates approach zero"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2019-11-27
+  url: "https://theconversation.com/now-we-know-the-reserve-bank-has-spelled-out-what-it-will-do-when-rates-approach-zero-127697"
+
+- title: "The Treasurer should not let the RBA off the hook so easily"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2019-11-06
+  url: "https://www.afr.com/policy/economy/the-treasurer-should-not-let-the-rba-off-the-hook-so-easily-20191105-p537j6"
+
+- title: "Trump’s fake trade deal comes at a high price for global economy"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2019-10-14
+  url: "https://www.afr.com/world/north-america/trump-s-fake-trade-deal-comes-at-a-high-price-for-global-economy-20191013-p5306s"
+
+- title: "When interest rates approach zero, the RBA must rethink monetary policy"
+  type: "op-ed"
+  outlet: "ABC Online"
+  date: 2019-10-08
+  url: "When interest rates approach zero, the RBA must rethink monetary policy"
+
+- title: "Currency wars lack real weapons"
+  type: "op-ed"
+  outlet: "The 45th"
+  date: 2019-08-14
+  url: "https://www.ussc.edu.au/currency-wars-lack-real-weapons"
+
+- title: "Beware of romaticising the legacies of Bretton Woods"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2019-07-26
+  url: "https://www.afr.com/policy/economy/beware-of-romanticising-the-legacies-of-bretton-woods-20190725-p52al3"
+
+- title: "Quantitative easing does not increase inequality"
+  type: "op-ed"
+  outlet: "The Mandarin"
+  date: 2019-06-19
+  url: "https://www.themandarin.com.au/110122-quantitative-easing-does-not-increase-inequality/"
+
+- title: "How the Reserve Bank would make quantitative easing work"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2019-06-18
+  url: "https://theconversation.com/below-zero-is-reverse-how-the-reserve-bank-would-make-quantitative-easing-work-118843"
+
+- title: "US Fed shows the RBA is not about to “run out of ammunition”"
+  type: "op-ed"
+  outlet: "The 45th"
+  date: 2019-06-05
+  url: "https://www.ussc.edu.au/us-fed-shows-rba-is-not-about-to-run-out-of-ammunition"
+
+- title: "State of Confusion: Economic Policy Uncertainty and International Trade and Investment"
+  type: "journal"
+  outlet: "The Australian Economic Review"
+  details: "52(2), pp. 178–199"
+  date: 2019-06-01
+  when: "June 2019"
+  url: "https://doi.org/10.1111/1467-8462.12319"
+
+- title: "New government should put Phil Lowe on the hook for inflation"
+  type: "op-ed"
+  outlet: "The Mandarin"
+  date: 2019-05-09
+  url: "https://www.themandarin.com.au/108191-new-government-should-put-phil-lowe-on-the-hook-for-inflation/"
+
+- title: "Why a US-China trade deal won’t end the trade war"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2019-05-09
+  url: "https://www.afr.com/policy/economy/why-a-us-china-deal-won-t-end-the-trade-war-20190508-p51l6q"
+
+- title: "There are surprising answers to the puzzle of stagnant wages"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2019-02-27
+  url: "https://www.afr.com/opinion/there-are-surprising-answers-to-the-puzzle-of-stagnant-wages-20190226-h1bpz1"
+
+- title: "Australia’s G20 plans died in Buenos Aires"
+  type: "op-ed"
+  outlet: "Medium"
+  date: 2018-12-06
+  url: "https://medium.com/@usstudiescentre/australias-g20-plans-died-in-buenos-aires-7dab2da26a17"
+
+- title: "Money too tight to mention: The Reserve Bank of Australia’s financial stability mandate and low inflation"
+  type: "journal"
+  outlet: "Economic Analysis and Policy"
+  details: "60, pp. 141–149"
+  date: 2018-12-01
+  when: "December 2018"
+  url: "https://doi.org/10.1016/j.eap.2018.09.014"
+  pdf: "files/articles/EAP.pdf"
+
+- title: "Defending Australia’s open door: Don’t blame globalisation for populism"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2018-11-14
+  url: "files/articles/KeepinganOpenDoortotheWorld.pdf"
+
+- title: "US bond bears are right, but for all the wrong reasons"
+  type: "op-ed"
+  outlet: "Business Insider"
+  date: 2018-10-12
+  url: "https://web.archive.org/web/20181012054340/https://www.businessinsider.com.au/us-bond-bears-right-2018-10"
+
+- title: "US foreign investment a casualty of Donald Trump’s trade war"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2018-09-30
+  url: "https://www.afr.com/opinion/us-fdi-a-casualty-of-donald-trumps-trade-war-20180928-h15z9x"
+
+- title: "The so-called “Lehman moment” was more symptom than cause"
+  type: "op-ed"
+  outlet: "ABC Online"
+  date: 2018-09-12
+  url: "https://www.abc.net.au/news/2018-09-12/lehman-brothers-collapse-the-moment-that-wasnt/10222638"
+
+- title: "Should national security be a deal-breaker"
+  type: "op-ed"
+  outlet: "The Sydney Morning Herald"
+  date: 2018-08-07
+  url: "https://www.smh.com.au/world/north-america/should-national-security-be-a-deal-breaker-20180805-p4zvn0.html"
+
+- title: "Donald Trump and US tariffs: A 1930s-style trade war will be hard to avert"
+  type: "op-ed"
+  outlet: "ABC Online"
+  date: 2018-07-11
+  url: "https://www.abc.net.au/news/2018-07-11/donald-trump-us-china-trade-war/9971560"
+
+- title: "Trump is fighting trade war against economic fundamentals"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2018-05-22
+  url: "https://www.afr.com/opinion/trump-is-fighting-trade-war-against-economic-fundamentals-20180522-h10efh"
+
+- title: "How Trump should really tackle Beijing’s technology thefts"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2018-04-08
+  url: "https://www.afr.com/opinion/how-trump-should-really-tackle-beijings-technology-thefts-20180408-h0yh86"
+
+- title: "The RBA’s shift to worrying about financial stability could be hurting Australian wages"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2018-03-16
+  url: "https://theconversation.com/the-rbas-shift-to-worrying-about-financial-stability-could-be-hurting-australian-wages-96714"
+
+- title: "Steel tariffs will take America back to the 1930s"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2018-03-02
+  url: "https://www.afr.com/policy/steel-tariffs-will-undermine-american-national-security-20180302-h0ww1d"
+
+- title: "Donald Trump has a chance to shape US monetary policy for years"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2018-02-14
+  url: "https://www.afr.com/opinion/trump-has-a-chance-to-shape-us-monetary-policy-for-years-20180213-h0w05o"
+
+- title: "The G20 and Global Governance"
+  type: "journal"
+  outlet: "Cato Journal"
+  details: "36(3)"
+  date: 2016-09-01
+  when: "Fall 2016"
+  url: "https://www.cato.org/sites/cato.org/files/serials/files/cato-journal/2016/9/cj-v36n3-2.pdf"
+
+- title: "Economy’s engine room right size for job"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2016-01-11
+  url: "https://www.afr.com/policy/economys-engine-room-right-size-for-job-20160110-gm2sol"
+
+- title: "High Frequency Trading: Fact and Fiction"
+  type: "journal"
+  outlet: "Policy"
+  details: "31(4)"
+  date: 2015-12-01
+  when: "Summer 2015–16"
+  url: "files/articles/PolicyHFT.pdf"
+
+- title: "Australia mustn’t jump the gun on macro-prudential policy"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2014-07-25
+  url: "https://www.cis.org.au/commentary/opinion/australia-mustnt-jump-the-gun-on-macro-prudential-policy/"
+
+- title: "Scapegoating investors won’t slow up house prices"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2014-07-10
+  url: "https://www.cis.org.au/commentary/opinion/scapegoating-investors-wont-slow-up-house-prices/"
+
+- title: "Europe holds its breath for ECB action"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2014-04-11
+  url: "https://www.cis.org.au/commentary/opinion/europe-holds-its-breath-for-ecb-action/"
+
+- title: "Official statistics need culture change"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2014-03-27
+  url: "https://web.archive.org/web/20140328131234/http://www.businessspectator.com.au:80/article/2014/3/27/economy/official-statistics-need-culture-change"
+
+- title: "Don’t blame foreigners for rising house prices"
+  type: "op-ed"
+  outlet: "The Sydney Morning Herald"
+  date: 2014-03-20
+  url: "https://www.smh.com.au/opinion/dont-blame-foreigners-for-rising-house-prices-20140319-352nn.html"
+
+- title: "Forget trying to curb demand, build more houses"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2014-01-23
+  url: "http://www.theaustralian.com.au/opinion/forget-trying-to-curb-demand-build-more-houses/story-e6frg6zo-1226807923196#"
+
+- title: "Playing the currencies game is fraught with risk"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2014-01-05
+  url: "https://www.cis.org.au/commentary/opinion/playing-the-currencies-game-is-fraught-with-risk/"
+
+- title: "We must fortify fiscal rules"
+  type: "op-ed"
+  outlet: "The Canberra Times"
+  date: 2013-12-16
+  url: "https://www.cis.org.au/commentary/opinion/we-must-fortify-fiscal-rules/"
+
+- title: "We are still stuck in the pre-1983 era on fiscal policy"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2013-12-09
+  url: "https://www.afr.com/policy/we-are-still-stuck-in-the-pre-1983-era-on-fiscal-policy-20131209-iyp26"
+
+- title: "When regulation becomes political interference"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2013-12-03
+  url: "https://www.cis.org.au/commentary/opinion/when-regulation-becomes-political-interference/"
+
+- title: "Reforming the regulation of foreign direct investment"
+  type: "op-ed"
+  outlet: "Infinance (FINSIA)"
+  date: 2013-12-01
+  when: "December 2013"
+  url: "files/articles/Infinance.pdf"
+
+- title: "Credit controls won’t fix housing"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2013-10-03
+  url: "https://www.cis.org.au/commentary/opinion/credit-controls-wont-fix-housing/"
+
+- title: "A dollar of super is not a dollar saved"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2013-09-25
+  url: "https://www.cis.org.au/commentary/opinion/a-dollar-of-super-is-not-a-dollar-saved/"
+
+- title: "Seizing a Sino free trade moment"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2013-07-16
+  url: "https://www.cis.org.au/commentary/opinion/seizing-a-sino-free-trade-moment/"
+
+- title: "Why tax-free imports are a retail red herring"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2013-06-24
+  url: "https://www.cis.org.au/commentary/opinion/why-tax-free-imports-are-a-retail-red-herring/"
+
+- title: "Stamp out the anti-dumping dinosaur laws"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2013-06-05
+  url: "https://www.cis.org.au/commentary/opinion/stamp-out-the-anti-dumping-dinosaur-laws/"
+
+- title: "Why a forex foray could burn the Reserve"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2013-04-18
+  url: "https://www.investsmart.com.au/investment-news/why-a-forex-foray-could-burn-the-reserve/100004"
+
+- title: "How Economists Succeed (and Fail) to Influence Policy"
+  type: "journal"
+  outlet: "Policy"
+  details: "29(1)"
+  date: 2013-03-01
+  when: "Autumn 2013"
+  url: "files/articles/HowEconomistsInfluencePolicyAug2013.pdf"
+
+- title: "Increasing the super contribution rate is a second-rate solution"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2013-01-08
+  url: "https://theconversation.com/increasing-the-super-contribution-rate-is-a-second-rate-solution-11467"
+
+- title: "Foreign Direct Investment in Australia Following the Australia-US Free Trade Agreement"
+  type: "journal"
+  outlet: "The Australian Economic Review"
+  details: "45(4), pp. 410–421"
+  date: 2012-12-01
+  when: "December 2012"
+  url: "https://doi.org/10.1111/j.1467-8462.2012.00686.x"
+  pdf: "files/articles/aerdec12.pdf"
+
+- title: "Federal Legislative Activism in Australia: A New Approach to Testing Wagner’s Law"
+  type: "journal"
+  outlet: "Public Choice"
+  details: "153(3–4), pp. 375–392"
+  date: 2012-12-01
+  when: "December 2012"
+  url: "https://doi.org/10.1007/s11127-011-9799-6"
+  pdf: "files/articles/PublicChoice.pdf"
+
+- title: "Better ideas than raising super guarantee"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2012-11-28
+  url: "https://www.cis.org.au/commentary/opinion/better-ideas-than-raising-super-guarantee/"
+
+- title: "The interest rate cut that wasn’t"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2012-11-05
+  url: "https://www.cis.org.au/commentary/opinion/the-interest-rate-cut-that-wasnt/"
+
+- title: "Prime Minister, this Asian century is so last century"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2012-10-30
+  url: "http://www.theaustralian.com.au/national-affairs/opinion/prime-minister-this-asian-century-is-so-last-century/story-e6frgd0x-1226505623418"
+
+- title: "The buck must not stop with the RBA"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2012-08-13
+  url: "https://www.cis.org.au/commentary/opinion/the-buck-must-not-stop-with-the-rba/"
+
+- title: "Coalition tightening of foreign investment policy a step backwards"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2012-08-06
+  url: "http://www.theaustralian.com.au/national-affairs/opinion/coalition-tightening-of-foreign-investment-policy-a-step-backwards/story-e6frgd0x-1226443380419"
+
+- title: "Why the euro project must end"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2012-05-22
+  url: "https://www.cis.org.au/commentary/opinion/why-the-euro-project-must-end/"
+
+- title: "There are better ways to ensure state’s future"
+  type: "op-ed"
+  outlet: "The West Australian"
+  date: 2012-05-21
+  url: "files/articles/WAFutureFund.pdf"
+
+- title: "Independent body needed to preserve integrity of fiscal forecasts"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2012-05-21
+  url: "https://theconversation.com/independent-body-needed-to-preserve-integrity-of-fiscal-forecasts-7063"
+
+- title: "How taxing housing diminishes affordability"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2012-04-18
+  url: "https://theconversation.com/how-taxing-housing-diminishes-affordability-6486"
+  also-label: "Reprinted in"
+  also-outlet: "Business Spectator"
+  also-when: "18 April 2012"
+  also-url: "https://web.archive.org/web/20120420221221/http://www.businessspectator.com.au:80/bs.nsf/Article/housing-property-affordability-henry-tax-review-ca-pd20120418-TFVVX?"
+
+- title: "Murray’s Future Fund brace is broken"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2012-03-23
+  url: "https://www.cis.org.au/commentary/opinion/murrays-future-fund-brace-is-broken/"
+
+- title: "Future Funds or Future Eaters? The case against a sovereign wealth fund for Australia"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2012-02-20
+  url: "https://theconversation.com/future-funds-or-future-eaters-the-case-against-a-sovereign-wealth-fund-for-australia-5450"
+
+- title: "Give austerity a chance"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2012-02-08
+  url: "https://www.cis.org.au/commentary/opinion/give-austerity-a-chance/"
+
+- title: "A country that ‘makes things’? There’s more to Australia than manufacturing"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2012-01-17
+  url: "https://theconversation.com/a-country-that-makes-things-theres-more-to-australia-than-manufacturing-4937"
+
+- title: "The long march of Fightback"
+  type: "op-ed"
+  outlet: "Online Opinion"
+  date: 2011-12-13
+  url: "https://www.onlineopinion.com.au/view.asp?article=13004"
+  also-label: "Also published"
+  also-title: "The Fightback! lesson: how politics can stymie good public policy"
+  also-outlet: "The Sydney Morning Herald"
+  also-when: "26 December 2011"
+  also-url: "https://www.smh.com.au/politics/federal/the-fightback-lesson-how-politics-can-stymie-good-public-policy-20111225-1p9aq.html"
+
+- title: "Has the mining boom given us ‘too much luck’? Hardly"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2011-11-22
+  url: "https://theconversation.com/has-the-mining-boom-given-us-too-much-luck-hardly-4376"
+
+- title: "Time to revisit RBA Board"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2011-09-07
+  url: "https://www.cis.org.au/commentary/opinion/time-to-revisit-rba-board/"
+
+- title: "Keep an eye on the underlying economic threat, not market ups and downs"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2011-08-11
+  url: "https://theconversation.com/keep-an-eye-on-the-underlying-economic-threat-not-market-ups-and-downs-2751"
+
+- title: "What our economists really think"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2011-07-26
+  url: "https://theconversation.com/what-our-economists-really-think-about-politics-2378"
+
+- title: "Foreign investment will boost food security"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2011-07-02
+  when: "2–3 July 2011"
+  url: "https://www.cis.org.au/commentary/opinion/foreign-investment-will-boost-food-security/"
+
+- title: "Budget office helps pollies, not punters"
+  type: "op-ed"
+  outlet: "The Drum (ABC)"
+  date: 2011-05-20
+  url: "https://www.abc.net.au/news/2011-05-20/kirchner---budget-office-helps-pollies2c-not-punters/2721450"
+
+- title: "Freddie Mac and Fannie Mae: guaranteed to fail?"
+  type: "op-ed"
+  outlet: "The Conversation"
+  date: 2011-05-17
+  url: "https://theconversation.com/freddie-mac-and-fannie-mae-guaranteed-to-fail-1307"
+
+- title: "Population growth makes us smarter, richer"
+  type: "op-ed"
+  outlet: "Newcastle Herald"
+  date: 2011-05-04
+  url: "files/articles/NCH4MAY11.pdf"
+
+- title: "Trimming to fit budget’s reduced revenue"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2011-04-13
+  url: "http://www.theaustralian.com.au/national-affairs/commentary/trimming-to-fit-budgets-reduced-revenue/story-e6frgd0x-1226038104396"
+
+- title: "A failure of political leadership"
+  type: "op-ed"
+  outlet: "The Straits Times"
+  date: 2011-04-11
+  url: "files/articles/straitstimes11Apr2011.pdf"
+
+- title: "A forgotten financial failure"
+  type: "op-ed"
+  outlet: "Online Opinion"
+  date: 2011-03-16
+  url: "https://www.onlineopinion.com.au/view.asp?article=11755"
+  also-label: "Also published"
+  also-outlet: "Business Spectator"
+  also-when: "26 March 2011"
+  also-url: "https://www.cis.org.au/commentary/opinion/a-forgotten-financial-failure/"
+
+- title: "Anti-dumping rules have a greater potential to harm producers and consumers"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2011-03-02
+  url: "http://www.theaustralian.com.au/business/anti-dumping-rules-have-a-greater-potential-to-harm-producers-and-consumers/story-e6frg8zx-1226014363959"
+
+- title: "Reforming Fiscal Responsibility Legislation"
+  type: "journal"
+  outlet: "Economic Papers"
+  details: "30(1), pp. 29–32"
+  date: 2011-03-01
+  when: "March 2011"
+  url: "https://doi.org/10.1111/j.1759-3441.2011.00098.x"
+  pdf: "files/articles/ecpa_098.pdf"
+
+- title: "Mortgage industry takes its $4bn win"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2010-12-14
+  url: "https://web.archive.org/web/20110102044903/http://theage.domain.com.au:80/home-investor-centre/mortgage-industry-takes-its-4bn-win-borrowers-lose-20101214-18w4i.html"
+
+- title: "Attacks on banks overlook effect of strong growth prospects"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2010-11-18
+  url: "http://www.theaustralian.com.au/business/attacks-on-banks-overlook-effect-of-strong-growth-prospects/story-e6frg8zx-1225955207724"
+
+- title: "Aussie banker bashing"
+  type: "op-ed"
+  outlet: "The Wall Street Journal"
+  date: 2010-11-16
+  url: "http://online.wsj.com/article/SB10001424052748704312504575617933648395028.html?mod=asia_opinion"
+
+- title: "G20 should tend to their own backyards"
+  type: "op-ed"
+  outlet: "The Drum (ABC)"
+  date: 2010-11-16
+  url: "https://www.abc.net.au/news/2010-11-16/g20_should_tend_to_their_own_backyards/41084"
+
+- title: "Fiscal authority is the way to go"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2010-09-21
+  url: "https://web.archive.org/web/20101104154612/http://cis.org.au/media-information/opinion-pieces/article/2186-fiscal-authority-the-way-to-go"
+
+- title: "A small Australia limits our creativity"
+  type: "op-ed"
+  outlet: "The Sydney Morning Herald"
+  date: 2010-09-07
+  url: "https://www.smh.com.au/politics/federal/a-small-australia-limits-our-creativity-20100906-14xvj.html"
+
+- title: "City got big but never grew up"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2010-08-19
+  url: "http://www.theaustralian.com.au/national-affairs/commentary/city-got-big-but-never-grew-up/story-e6frgd0x-1225907040578"
+
+- title: "Avoiding the sovereign wealth fund risks"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2010-07-15
+  url: "http://www.theaustralian.com.au/business/opinion/the-mining-tax-debate-highlights-the-terms-of-trade-boom/story-e6frg9if-1225891819484"
+
+- title: "Population zealots aim at the wrong targets"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2010-05-12
+  url: "http://www.theaustralian.com.au/news/opinion/population-zealots-aim-at-the-wrong-targets/story-e6frg6zo-1225865198595"
+
+- title: "Migrants add to growth hopes"
+  type: "op-ed"
+  outlet: "The Canberra Times"
+  date: 2010-04-27
+  url: "https://www.cis.org.au/commentary/opinion/migrants-add-to-growth-hopes/"
+
+- title: "Bond Market Vigilantes Should Weigh Risks of Continued Inactivity"
+  type: "op-ed"
+  outlet: "The Sydney Morning Herald"
+  date: 2010-04-13
+  url: "https://www.smh.com.au/business/bond-market-vigilantes-should-weigh-risks-of-continued-inactivity-20100412-s43b.html"
+
+- title: "Misguided government gets poor return for largesse"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2010-03-17
+  url: "https://www.theage.com.au/business/misguided-government-gets-poor-return-for-largesse-20100316-qcod.html"
+
+- title: "Benefits Grow in Monthly CPI"
+  type: "op-ed"
+  outlet: "The Canberra Times"
+  date: 2010-03-01
+  url: "files/articles/ctoped1mar10.pdf"
+
+- title: "More Inscrutable than the Chinese"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2010-02-19
+  url: "https://www.theaustralian.com.au/commentary/opinion/more-inscrutable-than-the-chinese/news-story/1e826e285b99c9b2c7e85db5e4634a92"
+
+- title: "Imbalances Essential to Global Economic System"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2010-01-22
+  url: "http://www.theaustralian.com.au/business/opinion/imbalances-essential-to-global-economic-system/story-e6frg9if-1225822308564"
+
+- title: "Economic Policy Must Re-Earn Our Respect"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2010-01-20
+  url: "https://www.cis.org.au/commentary/opinion/economic-policy-must-re-earn-our-respect/"
+
+- title: "The seasonal satisfaction index"
+  type: "op-ed"
+  outlet: "The Sydney Morning Herald"
+  date: 2009-12-26
+  url: "https://www.smh.com.au/politics/federal/the-seasonal-satisfaction-index-20091225-ley0.html"
+
+- title: "Labour Should Not Takes its Eyes Off the Target"
+  type: "op-ed"
+  outlet: "The Dominion Post (NZ)"
+  date: 2009-12-21
+  url: "https://www.stuff.co.nz/dominion-post/opinion/3180326/Labour-should-not-take-its-eyes-off-the-target"
+
+- title: "Big spending, poor results"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-12-16
+  url: "http://www.theaustralian.com.au/news/opinion/big-spending-poor-results/story-e6frg6zo-1225810745078"
+
+- title: "Kiwi Monetary Muddle"
+  type: "op-ed"
+  outlet: "The Wall Street Journal"
+  date: 2009-11-23
+  url: "http://online.wsj.com/article/SB10001424052748704888404574549461322387956.html"
+
+- title: "Doomsayer Does His Dough"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-11-18
+  url: "http://www.theaustralian.com.au/news/opinion/doomsayer-does-his-dough/story-e6frg6zo-1225799013391"
+
+- title: "End of Trend is Nigh for Central Bank Sales of Gold"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2009-11-17
+  url: "https://www.theage.com.au/business/end-of-trend-is-nigh-for-central-bank-sales-of-gold-20091116-iidb.html"
+
+- title: "More houses, not taxes"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-11-12
+  url: "http://www.theaustralian.com.au/news/opinion/more-housesnot-taxes/story-e6frg6zo-1225796669608"
+
+- title: "US Dollar Down But Not Out as Kingpin of Global Finance"
+  type: "op-ed"
+  outlet: "The Australian"
+  details: "p. 28"
+  date: 2009-11-05
+  url: "https://www.cis.org.au/commentary/opinion/us-dollar-down-but-not-out-as-kingpin-of-global-finance/"
+
+- title: "Forecasters sell Australia short"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  details: "p. 63"
+  date: 2009-10-14
+  url: "https://web.archive.org/web/20111027233354/http://cis.org.au/media-information/opinion-pieces/article/42-policymakers-sold-australia-short"
+
+- title: "Canberra’s Investment Confusion"
+  type: "op-ed"
+  outlet: "The Wall Street Journal"
+  date: 2009-09-29
+  url: "http://online.wsj.com/article/SB10001424052748704471504574442281091477054.html"
+
+- title: "Prophet der Pleite"
+  type: "op-ed"
+  outlet: "Jüdische Allgemeine"
+  date: 2009-09-17
+  url: "https://web.archive.org/web/20100615150337/http://www.juedische-allgemeine.de:80/article/view/id/1475/highlight/kirchner&hartwich"
+  note: "In German, with Oliver Hartwich."
+
+- title: "Hewson Manifesto Was Ahead of its Time"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-09-15
+  url: "https://www.cis.org.au/commentary/opinion/hewson-manifesto-was-ahead-of-its-time/"
+
+- title: "Economist with a Nose for Trouble"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2009-09-10
+  url: "https://www.theage.com.au/business/economist-with-a-nose-for-trouble-20090909-fho8.html"
+  note: "With Oliver Hartwich."
+
+- title: "Treasurer’s Liberalisation Measures Should Go Deeper"
+  type: "op-ed"
+  outlet: "The Canberra Times"
+  date: 2009-08-05
+  url: "files/articles/ctaa01105c_small.pdf"
+
+- title: "NZ Tries Harder for Foreign Cash"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2009-07-31
+  url: "https://www.cis.org.au/commentary/opinion/nz-tries-harder-for-foreign-cash/"
+
+- title: "Economic Debate Suffers from Too Much Reserve"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2009-07-24
+  url: "https://web.archive.org/web/20170111153701/http://www.institutional-economics.com/index.php/section/comments/no_time_for_a_media-shy_central_banker/"
+
+- title: "End the Budget Sideshow"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-07-15
+  url: "https://www.cis.org.au/commentary/opinion/end-the-budget-sideshow/"
+  note: "With Robert Carling."
+
+- title: "Short-Term Fixes Help Nobody"
+  type: "op-ed"
+  outlet: "The Weekend Australian"
+  details: "p. 19"
+  date: 2009-06-20
+  url: "https://web.archive.org/web/20090625181601/http://www.theaustralian.news.com.au:80/story/0,25197,25661426-30538,00.html"
+
+- title: "A Bother Over Banks"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2009-06-20
+  url: "https://web.archive.org/web/20090625120045/http://www.businessspectator.com.au:80/bs.nsf/Article/Dont-villify-the-banks-pd20090618-T59VF?OpenDocument&src=sph"
+
+- title: "Can’t Stop the Music"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2009-06-10
+  url: "https://www.cis.org.au/commentary/opinion/cant-stop-the-music/"
+
+- title: "The Madding Crowding Out"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2009-05-22
+  url: "https://www.theage.com.au/business/the-madding-crowding-out-20090521-bh5z.html"
+
+- title: "Hey Big Spender, Stop Stimulating"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-05-14
+  url: "https://web.archive.org/web/20090514235339/http://www.theaustralian.news.com.au:80/story/0,25197,25475539-7583,00.html"
+
+- title: "Fear Canberra, Not Beijing"
+  type: "op-ed"
+  outlet: "Business Spectator"
+  date: 2009-04-01
+  url: "https://www.cis.org.au/commentary/opinion/fear-canberra-not-beijing/"
+
+- title: "Should Keynes Have a Seat at the G20 Table?"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  details: "pp. 28–29"
+  date: 2009-03-28
+  when: "28–29 March 2009"
+  url: "https://www.cis.org.au/commentary/opinion/should-keynes-have-a-seat-at-the-g20-table/"
+
+- title: "Don’t blame Greenspan’s monetary policy"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2009-03-19
+  url: "https://www.smh.com.au/business/dont-blame-greenspans-monetary-policy-20090318-925f.html"
+
+- title: "Foreign Interest is All Win for Australia"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-03-04
+  url: "https://www.cis.org.au/commentary/opinion/foreign-interest-is-all-win-for-australia/"
+
+- title: "Plan delivers little bang for very big bucks"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2009-02-04
+  url: "https://www.cis.org.au/commentary/opinion/plan-delivers-little-bang-for-very-big-bucks/"
+
+- title: "Public Will Wear the Risk"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2009-01-28
+  url: "https://web.archive.org/web/20170111152411/http://www.institutional-economics.com/index.php/section/comments/rudd_bank_puts_taxpayers_last/"
+
+- title: "Keynes was Wrong About the Paradox of Thrift"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  details: "p. 47"
+  date: 2009-01-13
+  url: "https://web.archive.org/web/20170111162412/http://www.institutional-economics.com/index.php/section/comments/thrift_is_no_paradox/"
+
+- title: "Flinging Wods of Dosh About Won’t Work"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2008-12-10
+  url: "https://www.cis.org.au/commentary/opinion/flinging-wads-of-dosh-about-wont-work/"
+
+- title: "Commodity Prices and the Australian Economy: Trends versus Cycles"
+  type: "journal"
+  outlet: "Policy"
+  details: "24(4)"
+  date: 2008-12-01
+  when: "Summer 2008–09"
+  url: "files/articles/CommodityPricesAustEconomyPolicySummer0809.pdf"
+
+- title: "Bubble, toil and trouble"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2008-11-12
+  url: "https://www.cis.org.au/commentary/opinion/bubble-toil-and-trouble/"
+
+- title: "Car subsidies blow good money out the exhaust"
+  type: "op-ed"
+  outlet: "The Sydney Morning Herald"
+  date: 2008-11-11
+  url: "https://www.smh.com.au/national/car-subsidies-blow-good-money-out-the-exhaust-20081111-gdt2b3.html"
+
+- title: "Beware Political Saviours"
+  type: "op-ed"
+  outlet: "The Australian"
+  date: 2008-10-29
+  url: "https://www.cis.org.au/commentary/opinion/beware-political-saviours/"
+
+- title: "The Wrong Plan for Australia"
+  type: "op-ed"
+  outlet: "The Wall Street Journal"
+  details: "p. 19"
+  date: 2008-10-15
+  url: "files/articles/WSJ_op-ed_15_October_2008.pdf"
+
+- title: "$4 billion is no real help"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2008-09-30
+
+- title: "Don’t count rate-cut chickens before they hatch - inflation is still simmering"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2008-08-12
+  url: "https://web.archive.org/web/20081019090357/http://business.theage.com.au:80/business/dont-count-ratecut-chickens-before-they-hatch--inflation-is-still-simmering-20080811-3to5.html?page=1"
+
+- title: "Independence: 2, accountability: 0"
+  type: "op-ed"
+  outlet: "The Age"
+  date: 2008-03-27
+  url: "https://www.theage.com.au/business/independence-2-accountability-0-20080326-21qy.html"
+
+- title: "A “New Era” for the Reserve Bank?"
+  type: "journal"
+  outlet: "Policy"
+  details: "24(1)"
+  date: 2008-03-01
+  when: "Autumn 2008"
+  url: "files/articles/ANewErafortheRBA.pdf"
+
+- title: "Tax Cuts Don’t Cause Higher Interest Rates"
+  type: "op-ed"
+  outlet: "The Australian Financial Review"
+  date: 2007-10-09
+  url: "https://web.archive.org/web/20071130152842/http://www.cis.org.au:80/executive_highlights/EH2007/ehkirchner.html"
+
+- title: "Fiscal Policy and Interest Rates in Australia"
+  type: "journal"
+  outlet: "Policy"
+  details: "23(3)"
+  date: 2007-09-01
+  when: "Spring 2007"
+  url: "files/articles/FiscalPolicyandInterestRatesinAustraliaSpring2007.pdf"
+
+- title: "Future Fund or Future Eater? The Opportunity Cost of Commonwealth Revenue Hoarding"
+  type: "journal"
+  outlet: "Policy"
+  details: "22(3)"
+  date: 2006-09-01
+  when: "Spring 2006"
+  url: "files/articles/FutureFundorFutureEaterPolicySpring2006.pdf"
+
+- title: "Will Japan Target Inflation in 2006?"
+  type: "op-ed"
+  outlet: "Business Week"
+  date: 2006-01-16
+  url: "files/articles/Will_Japan_Target_Inflation_in_2006_.pdf"
+
+- title: "The Mandarins of Martin Place"
+  type: "journal"
+  outlet: "Policy"
+  details: "20(3)"
+  date: 2004-09-01
+  when: "Spring 2004"
+  url: "files/articles/moneymandarins.pdf"
+
+- title: "James Buchanan’s Normative Theory of the State"
+  type: "journal"
+  outlet: "Australian Journal of Political Science"
+  details: "30(2), pp. 228–241"
+  date: 1995-07-01
+  when: "July 1995"
+  url: "https://doi.org/10.1080/00323269508402334"
+  pdf: "files/articles/buchanan.pdf"
+
+- title: "Australia Should Dump its Anti-Dumping Laws"
+  type: "journal"
+  outlet: "Policy"
+  date: 1992-12-01
+  when: "Summer 1992–93"
+  url: "files/articles/PolicySummer92-93Dumping.pdf"
+

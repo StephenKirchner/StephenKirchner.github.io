@@ -1,11 +1,31 @@
 ---
 title: "Articles"
+toc: false
 listing:
-  contents: articles.yml
-  type: table
-  sort: "date desc"
-  fields: [date, title, description]
-  date-format: "YYYY"
-  sort-ui: false
-  filter-ui: true
+  - id: journal
+    contents: articles.yml
+    include:
+      type: journal
+    template: _articles.ejs
+    sort: "date desc"
+    date-format: "D MMMM YYYY"
+  - id: opeds
+    contents: articles.yml
+    include:
+      type: op-ed
+    template: _articles.ejs
+    template-params:
+      group-by-year: true
+    sort: "date desc"
+    date-format: "D MMMM YYYY"
 ---
+
+## Journal and policy articles
+
+::: {#journal}
+:::
+
+## Op-eds
+
+::: {#opeds}
+:::
