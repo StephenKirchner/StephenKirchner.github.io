@@ -7,3 +7,5 @@ listing:
   categories: true
   feed: true          # generates blog.xml (the RSS link in the sidebar)
 ---
+
+Older posts from my *Institutional Economics* blog (2003–2024) are in the [blog archive](https://stephenkirchner.github.io/archive/).
